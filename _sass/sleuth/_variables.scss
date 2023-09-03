@@ -1,0 +1,111 @@
+// Colors
+
+$black: hsl(0, 0%, 4%) !default;
+$black-bis: hsl(0, 0%, 7%) !default;
+$black-ter: hsl(0, 0%, 14%) !default;
+$black-lighter: hsl(0, 0%, 15%) !default;
+
+$grey-darkest: hsl(0, 0%, 20%) !default;
+$grey-darker: hsl(0, 0%, 21%) !default; // #343942
+$grey: hsl(0, 0%, 48%) !default;
+$grey-light: hsl(0, 0%, 71%) !default;
+$grey-lighter: hsl(0, 0%, 86%) !default;
+$grey-lightest: hsl(0, 0%, 93%) !default;
+
+$white-ter: hsl(0, 0%, 96%) !default;
+$white-bis: hsl(0, 0%, 98%) !default;
+$white: hsl(0, 0%, 100%) !default;
+
+$orange: hsl(14, 100%, 53%) !default;
+$yellow: hsl(48, 100%, 67%) !default;
+$green: hsl(141, 53%, 53%) !default;
+$turquoise: hsl(171, 100%, 41%) !default;
+$cyan: hsl(204, 71%, 53%) !default;
+$blue: hsl(217, 71%, 53%) !default;
+$purple: hsl(271, 100%, 71%) !default;
+$red: hsl(348, 86%, 61%) !default;
+
+$primary: #0048CD;
+$grey-lightest: #f6f6f6;
+$grey-dark: #586373;
+$grey-darker: #333942;
+
+$text: #263238;;
+$text-light: $grey-dark;
+$text-strong: $grey-darker;
+$link: $primary;
+$link-hover: darken($primary, 10%);
+$scheme-main: #ffffff;
+$scheme-invert: $grey-darker;
+$background: #e8e9f2;
+
+$border: $grey-darker;
+$border-hover: darken($grey-darker, 20%);
+
+// --------------------------------------------------
+// Color pairs
+// Define color pairs for automatic generated helper classes.
+$colors: (
+        "primary": ($grey-dark, $white, $primary, $primary, $white, $white),
+        "dark": ($grey-darker, $white, $primary, $primary, $white, $white),
+        "white": ($white, $primary, $primary, $primary, $white, $white),
+        "transparent": (transparent, $white, $white, $white, $grey-darker, $grey-darker)
+);
+// ...
+
+// Typography
+
+$family-sans-serif: myriad-pro, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-code: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+$family-monospace: monospace;
+$render-mode: optimizeLegibility;
+
+$size-1: 3rem;
+$size-2: 2.25rem;
+$size-3: 1.5rem;
+$size-4: 1.25rem;
+$size-5: 1rem;
+$size-6: 0.875rem;
+$size-7: 0.75rem;
+
+$size-small: $size-7 !default;
+$size-normal: $size-6 !default;
+$size-medium: $size-5 !default;
+$size-large: $size-4 !default;
+
+$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7;
+
+$weight-light: 300;
+$weight-normal: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+
+// Responsiveness
+// The container horizontal gap, which acts as the offset for breakpoints
+$gap: 32px;
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 769px;
+// 960px container + 4rem
+$desktop: 960px + (2 * $gap);
+// 1152px container + 4rem
+$widescreen: 1152px + (2 * $gap);
+$widescreen-enabled: true;
+// 1344px container + 4rem
+$fullhd: 1344px + (2 * $gap);
+$fullhd-enabled: true;
+
+// Miscellaneous
+$easing: ease-out;
+$radius-small: 2px;
+$radius: 4px;
+$radius-large: 6px;
+$radius-rounded: 290486px;
+$speed: 86ms;
+
+$aos-distance: 24px;
+
+$box-shadow: rgba($text, 0.12);
+$text-darker: rgba($text, 0.6);
+
+$letter-spacing-alt: 0.25em;

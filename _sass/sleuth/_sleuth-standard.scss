@@ -1,0 +1,71 @@
+.sleuth-standard {
+
+  .display-none {
+    display: none;
+  }
+
+  .how-it-works {
+    margin: 2rem 0 0 0;
+    text-align: center;
+
+    .h2 {
+      color: #606060;
+      font-size: 46px;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    hr {
+      border: 1px solid #606060;
+      margin: 0 auto 2rem;
+      max-width: 50%;
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: 25% 1fr;
+      grid-gap: 0 1rem;
+      width: 65%;
+      box-shadow: 0 0 0.25em 0 rgba(0,0,0,0.15);
+      padding: 1rem 0.75rem;
+      margin: 0 auto;
+
+      @include mobile {
+        grid-template-columns: 1fr;
+        width: 90%;
+      }
+
+      .h3 {
+        color: #1D1D1D;
+        font-size: 54px;
+        font-weight: 400;
+        line-height: 1.3;
+        margin: 0;
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        margin: 0;
+      }
+    }
+
+    .arrow-down {
+      width: 65%;
+      margin: auto;
+      text-align: left;
+      padding: 0 0 0 7%;
+
+      @include mobile {
+        padding: 0;
+        text-align: center;
+      }
+
+      span {
+        font-size: 54px;
+        color: #1D1D1D;
+      }
+    }
+  }
+}

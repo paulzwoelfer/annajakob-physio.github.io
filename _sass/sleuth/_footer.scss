@@ -1,0 +1,56 @@
+
+#footer {
+  background: $primary;
+  filter: saturate(.3) brightness(.6);
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem;
+
+    svg {
+      width: 200px;
+    }
+  }
+
+  .footer-links {
+    color: $white;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    a {
+      text-decoration: none;
+      border: none;
+      padding: 10px;
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    max-width: 65em;
+    padding: 0 0 1rem 0;
+
+    @include mobile {
+      padding: 0 1rem;
+    }
+    .icons {
+      margin: 0;
+
+      .icon {
+        color: $white;
+        &.alt {
+          &:before {
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+
+}

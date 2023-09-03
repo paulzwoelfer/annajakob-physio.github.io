@@ -1,0 +1,97 @@
+.client {
+
+  p {
+    text-align: center;
+  }
+
+  .section-datasets {
+    margin: 2rem 0 0 0;
+    text-align: center;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    .h2 {
+      color: #606060;
+      font-size: 46px;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    hr {
+      border: 1px solid #606060;
+      margin: 0 auto 2rem;
+      max-width: 50%;
+    }
+
+    .info-container {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      grid-gap: 20px 1rem;
+      margin: 0 auto;
+
+      @include mobile {
+        grid-template-columns: 1fr;
+        width: 90%;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
+        padding: 1rem 0.75rem;
+
+        span {
+          color: #1D1D1D;
+
+          &:last-child {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .card-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 25%;// 25% 25% 25%;
+    grid-gap: 20px 1rem;
+    margin: 0 auto;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      width: 90%;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
+      padding: 1rem 0.75rem;
+
+      &:hover {
+        -webkit-animation: shadow-drop-2-bottom 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: shadow-drop-2-bottom 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      }
+
+      .h3 {
+        color: #1D1D1D;
+        margin: 0;
+      }
+
+      p {
+        text-align: center;
+        margin: 0 0 1rem 0;
+      }
+
+      span {
+        text-align: end;
+        color: rgba(00,00,00, 0.5);
+      }
+    }
+  }
+}

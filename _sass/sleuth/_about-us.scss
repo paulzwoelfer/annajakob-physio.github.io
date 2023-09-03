@@ -1,0 +1,80 @@
+#wrapper {
+  .about-us {
+    &.inner {
+      padding: 1em 0 2em 0;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .people {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1rem 3rem;
+      text-align: center;
+      cursor: pointer;
+
+      img {
+        height: 300px;
+        box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
+      }
+
+      h2 {
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      .linkedin {
+        display: inline-block;
+        height: 2em;
+        width: 2em;
+        margin: 0 0 5px 0;
+        color: #ffffff;
+        background-color: #0a66c2;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 2em;
+        font-family: FontAwesome;
+
+        &:hover {
+          -webkit-animation: jello-horizontal 0.9s both;
+          animation: jello-horizontal 0.9s both;
+        }
+      }
+
+      .fa-linkedin {
+        &:before {
+          margin: 0 0 5px 0;
+          color: #ffffff;
+          background-color: #0a66c2;
+        }
+
+        &:hover {
+          -webkit-animation: vibrate-1 0.3s linear infinite both;
+          animation: vibrate-1 0.3s linear infinite both;
+        }
+      }
+
+      .description {
+        display: none;
+        box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
+        padding: 10px;
+        font-size: 12pt;
+
+        &.active {
+          display: block;
+        }
+      }
+
+      @include mobile {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

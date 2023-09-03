@@ -1,12 +1,42 @@
 ---
 ---
+/*@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+@import 'font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic,700,700italic');*/
 
-@charset "utf-8";
+// Sleuth
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "member-box",
-        "timeline",
-        "page",
-        "icons"
-;
+@import 'sleuth/all';
+
+// Base.
+
+	//@import 'base/page';
+	//@import 'base/typography';
+
+// Component.
+
+	/*@import 'components/section';
+	@import 'components/form';
+	@import 'components/box';
+	@import 'components/icon';
+	@import 'components/image';
+	@import 'components/list';
+	@import 'components/table';
+	@import 'components/button';
+	@import 'components/tiles';
+	@import 'components/contact-method';
+	@import 'components/spotlights';
+
+// Layout.
+
+	@import 'layout/header';
+	@import 'layout/banner';
+	@import 'layout/main';
+	@import 'layout/contact';
+	@import 'layout/wrapper';
+	@import 'layout/menu';*/
+
+

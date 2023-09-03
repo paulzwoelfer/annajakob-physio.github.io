@@ -1,0 +1,77 @@
+
+#header {
+  display: flex;
+  align-items: center;
+  background-color: $white;
+  box-shadow: 0 0 0.25em 0 rgba(0,0,0,0.15);
+  letter-spacing: $letter-spacing-alt;
+  line-height: 3.25em;
+  position: fixed;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+
+  .logo {
+    height: 52px;
+    width: 180px;
+    font-size: 0.8em;
+    padding: 0 1.5em;
+
+    @include mobile {
+      //width: 160px;
+    }
+  }
+
+  nav {
+    color: $black;
+  }
+
+  .mobile-menu {
+    @include desktop {
+      display: none;
+    }
+  }
+
+  .desktop-menu {
+    @include mobile {
+      display: none;
+    }
+
+    ul {
+      margin: 0;
+      list-style-type: none;
+    }
+
+    .links {
+      display: flex;
+
+      li {
+        padding: 0;
+
+        a {
+          padding: 0 1em;
+
+          &:hover {
+            -webkit-animation: vibrate-1 0.3s linear both;
+            animation: vibrate-1 0.3s linear both;
+          }
+
+          &.active {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.40);
+            //text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .actions {
+      a {
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
