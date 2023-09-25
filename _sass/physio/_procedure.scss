@@ -1,0 +1,13 @@
+.list {
+    list-style-position: inside;
+
+    li { 
+        display: flex;
+        justify-content: center;
+
+        &::before { 
+            content: '• '; 
+        } 
+    } 
+}
+

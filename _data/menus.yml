@@ -9,5 +9,7 @@ header:
   url: /#behandlungen
 #- title: Preis
 #  url: /#preis
+- title: Ablauf
+  url: /#procedure
 - title: Termin
   url: /#termin

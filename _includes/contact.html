@@ -10,8 +10,10 @@
       <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
         {% for action in section.actions %}
         <div class="col ml-auto text-center">
-          <i class="fs-1 {{ action.icon }} mb-3 text-muted"></i>
-          <a class="d-block" href="{{ action.url }}">{{ action.title }}</a>
+          <a class="icon-link" href="{{ action.url }}">
+            <ion-icon class="icon" name="{{ action.icon }}"></ion-icon>
+            {{ action.title }}
+          </a>
         </div>
         {% endfor %}
       </div>

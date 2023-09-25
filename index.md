@@ -25,10 +25,10 @@ sections:
     services:
       - title: Bewegungstherapie / Physiotherapie
         text: Eine Behandlungsmethode, die Bewegung und Übungen verwendet, um Schmerzen zu lindern, die Beweglichkeit zu verbessern und die körperliche Funktion wiederherzustellen. 
-        icon: bi-gem text-info
+        icon: barbell-outline
       - title: Schroth Therapie
         text: Das Therapieverfahren nach Katharina Schroth ist eine physiotherapeutische Methode, die darauf abzielt, die ungleichmäßige Entwicklung der Wirbelsäule bei Kindern und Erwachsenen zu reduzieren und die damit verbundenen Gesundheitsprobleme zu behandeln.
-        icon: bi-rocket-takeoff
+        icon: rocket-outline
       - title: Dorn-Therapie
         text: Diese Methode ist schonend und wird verwendet, um Beschwerden des Bewegungsapparates zu behandeln. Während der Therapiesitzung führt der Therapeut behutsame und einfühlsame Bewegungen durch, um Wirbel und Gelenke in ihre korrekte Position zu bringen.
         icon: bi-activity
@@ -43,7 +43,7 @@ sections:
         icon: bi-emoji-heart-eyes
       - title: Manuelle therapie (Triggerpunkte und Fasciatechnik)
         text: Some not-so long text here.
-        icon: bi-emoji-heart-eyes
+        icon: walk-outline
       - title: Mobilisationen
         text: Some not-so long text here.
         icon: bi-emoji-heart-eyes
@@ -57,17 +57,17 @@ sections:
         text: Some not-so long text here.
         icon: bi-emoji-heart-eyes
 
-  - type: call-to-action.html
-    section_id: uebermich
+  - type: procedure.html
+    section_id: procedure
     background_style: bg-primary
     title: Ablauf der Physiotherapie
     text: > 
-      Vor der ersten Behandlung
-      Für Ihre Behandlung benötigen Sie eine ärztliche Verordnung. Diese erhalten sie von der Ärztin/vom Arzt Ihres Vertrauens.Die Verordnung muss neben persönlichen Daten folgende Informationen beinhalten:<br/>
-      - eine medizinische Diagnose<br/>
-      - die Anzahl der Behandlungseinheiten und<br/>
-      - die verordnete Behandlung (z.B. Physiotherapie à 45 Minuten)<br/>
-      Die Verordnung muss bereits vor der ersten Einheit vom zuständigen Krankenversicherungsträger bewilligt werden.
+      Für Ihre Behandlung benötigen Sie eine ärztliche Verordnung. Diese erhalten sie von der Ärztin/vom Arzt Ihres Vertrauens.Die Verordnung muss neben persönlichen Daten folgende Informationen beinhalten:
+    list:
+      - eine medizinische Diagnose
+      - die Anzahl der Behandlungseinheiten und
+      - die verordnete Behandlung (z.B. Physiotherapie à 45 Minuten)
+    text2: Die Verordnung muss bereits vor der ersten Einheit vom zuständigen Krankenversicherungsträger bewilligt werden.
 
   #- type: services.html
   #  section_id: preis
@@ -104,14 +104,14 @@ sections:
     text: >-
       Hier können Sie einen Termin buchen!
     actions:
-    - title: Telefon
-      icon: bi-telephone-fill
-      url: tel:+43 676 
     - title: E-Mail
-      icon: bi-envelope-fill
+      icon: mail-outline
       url: mailto:contact@yourwebsite.com
+    - title: Telefon
+      icon: call-outline
+      url: tel:+43 676 
     - title: Instagram
-      icon: bi-facebook
+      icon: logo-instagram
       url: '#'
 
 
