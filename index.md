@@ -102,7 +102,7 @@ sections:
     section_id: termin
     title: Termin
     text: >-
-      Hier können Sie einen Termin buchen!
+      Über folgende Kanäle können Sie einen Termin bei mir buchen:
     actions:
     - title: E-Mail
       icon: mail-outline
