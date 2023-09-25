@@ -6,7 +6,14 @@
         <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}" />
+
+         <!-- Core theme CSS (includes Bootstrap)-->
+         <link rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}"  />
+
+         <!-- Own styles -->
+        <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}" />
+
+
     
         <!-- Favicon-->
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
@@ -19,8 +26,7 @@
         <meta name="msapplication-config" content="/assets/images/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
 
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="assets/css/styles.css" rel="stylesheet" />
+       
     </head>
 
 

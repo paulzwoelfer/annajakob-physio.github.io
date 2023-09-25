@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Privacy policy
-permalink: privacy_policy
+title: Datenschutz
+permalink: datenschutz
 ---
 
 <div id="main" class="inner no-p-margin policy">

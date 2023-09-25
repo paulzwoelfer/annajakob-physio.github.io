@@ -1,0 +1,72 @@
+
+.navbar {
+    display: block;
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    top: 0;
+    border-width: 0 0 1px;
+    transition: all 0.35s;
+
+    @include mobile {
+        border-radius: 0;
+    }
+}
+
+.navbar-default {
+
+    @include desktop {
+        background-color: transparent;
+        border-color: rgba(255, 255, 255, 0.3);
+    }
+    
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#mainNav {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+
+    @include desktop {
+        box-shadow: none;
+        background-color: transparent;
+
+        &.navbar-shrink {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            background-color: #fff;
+        }
+    }
+}
+
+.py-3 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}

@@ -3,11 +3,11 @@
 # However on github-pages custom plugins are disabled, and the script doesn't
 # run. So please, fill in any custom menu entry here.
 header:
-- title: Über mich
-  url: /#uebermich
+#- title: Über mich
+#  url: /#uebermich
 - title: Behandlungen
   url: /#behandlungen
-- title: Preis
-  url: /#preis
-- title: Kontakt
-  url: /#kontakt
+#- title: Preis
+#  url: /#preis
+- title: Termin
+  url: /#termin

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Imprint
-permalink: imprint
+title: Impressum
+permalink: impressum
 ---
 
 <div id="main" class="inner text-center">
