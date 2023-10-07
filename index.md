@@ -38,15 +38,9 @@ sections:
       - title: Kinesio-Taping
         text: Some not-so long text here.
         icon: bi-emoji-heart-eyes
-      - title: Acu Tape
-        text: Some not-so long text here.
-        icon: bi-emoji-heart-eyes
       - title: Manuelle therapie (Triggerpunkte und Fasciatechnik)
         text: Some not-so long text here.
         icon: walk-outline
-      - title: Mobilisationen
-        text: Some not-so long text here.
-        icon: bi-emoji-heart-eyes
       - title: Sturzprophylaxe und Gangschulung
         text: Some not-so long text here.
         icon: bi-emoji-heart-eyes
