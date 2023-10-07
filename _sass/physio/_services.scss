@@ -11,12 +11,20 @@
     }
 
     /* Style for the card */
+    /* Style for the card with a Glassmorphism effect */
     .card {
-        background-color: #ffffff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        text-align: center;
-        padding: 30px 20px;
+        background: rgba(255, 255, 255, 0.2); /* Adjust the alpha (transparency) value to control the Glassmorphism effect */
         border-radius: 8px;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px); /* Adjust the blur value for more or less frosted effect */
+        transition: transform 0.2s ease-in-out; /* Add a smooth hover effect */
+
+        /* Hover effect for the card */
+        &:hover {
+            //transform: scale(1.05); /* Scale up the card on hover */
+        }
     }
     
     /* Style for the card title */
