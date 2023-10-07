@@ -25,31 +25,22 @@ sections:
     services:
       - title: Bewegungstherapie / Physiotherapie
         text: Eine Behandlungsmethode, die Bewegung und Übungen verwendet, um Schmerzen zu lindern, die Beweglichkeit zu verbessern und die körperliche Funktion wiederherzustellen. 
-        icon: barbell-outline
       - title: Schroth Therapie
         text: Das Therapieverfahren nach Katharina Schroth ist eine physiotherapeutische Methode, die darauf abzielt, die ungleichmäßige Entwicklung der Wirbelsäule bei Kindern und Erwachsenen zu reduzieren und die damit verbundenen Gesundheitsprobleme zu behandeln.
-        icon: rocket-outline
       - title: Dorn-Therapie
         text: Diese Methode ist schonend und wird verwendet, um Beschwerden des Bewegungsapparates zu behandeln. Während der Therapiesitzung führt der Therapeut behutsame und einfühlsame Bewegungen durch, um Wirbel und Gelenke in ihre korrekte Position zu bringen.
-        icon: bi-activity
       - title: Lymphdrainage
         text: Die Lymphdrainage ist eine schonende Technik, die dazu dient, das Lymphsystem zu stimulieren und überschüssige Flüssigkeit aus dem Gewebe zurück in die Blutgefäße zu leiten. Bei der komplexen Entstauungstherapie werden darüber hinaus auch Kompressionsverbände verwendet.<br/>Diese Methode wird angewendet, um Ödeme zu behandeln, die akut nach Operationen, Tumorbehandlungen, Traumata usw. auftreten, sowie bei angeborenen Lymphödemen. Sie wirkt sich positiv auf das vegetative Nervensystem aus, insbesondere auf den Nervus sympathicus, und kann daher schmerzlindernde Effekte erzielen.
-        icon: bi-heart-fill
       - title: Kinesio-Taping
-        text: Some not-so long text here.
-        icon: bi-emoji-heart-eyes
+        text: Kinesiotape wird bei verschiedenen Beschwerden und Verletzungen verwendet. Der körpereigene Heilungsprozess wird stimuliert, indem es Unterstützung und Stabilität bietet, ohne dabei die Beweglichkeit zu beeinflussen. Aus diesem Grund wird das medizinische Tapen oftmals als ergänzende Behandlungsmethode verwendet.
       - title: Manuelle therapie (Triggerpunkte und Fasciatechnik)
         text: Some not-so long text here.
-        icon: walk-outline
       - title: Sturzprophylaxe und Gangschulung
-        text: Some not-so long text here.
-        icon: bi-emoji-heart-eyes
+        text: Die Sturzprophylaxe setzt es sich zum Ziel, das Sturzrisiko zu vermindern und damit Stürze zu verhindern. Von einem Sturz spricht man dann, wenn ein:e Betroffene:r unbeabsichtigt auf dem Boden aufkommt. Die Verhinderung einer solchen Situation ist Gegenstand der Sturzprophylaxe. <br/>Gangschulung, krankengymnastisches Verfahren zur (Wieder-)Erlangung eines möglichst normalen und gesunden Gangbildes. Sie wird notwendig bei bleibenden Behinderungen, z. B. durch Lähmungen nach einem Schlaganfall, bei vorübergehenden Einschränkungen, z. B. Muskelverspannungen, oder zur Entlastung.
       - title: Reha nach Unfall, Verletzungen und Operationen
         text: Some not-so long text here.
-        icon: bi-emoji-heart-eyes
       - title: Atemtherapie
         text: Some not-so long text here.
-        icon: bi-emoji-heart-eyes
 
   - type: procedure.html
     section_id: procedure

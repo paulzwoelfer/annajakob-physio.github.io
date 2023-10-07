@@ -25,14 +25,15 @@ $blue: hsl(217, 71%, 53%) !default;
 $purple: hsl(271, 100%, 71%) !default;
 $red: hsl(348, 86%, 61%) !default;
 
-$primary: #ceb39c;
-$secondary: #6a93b0;
+$primary: #f5e3cf;
+$secondary: #0e6c77;
+$tertiary: #052b3a;
 $grey-lightest: #f6f6f6;
 $grey-dark: #586373;
 $grey-darker: #333942;
 
-$text: #263238;;
-$text-light: $grey-dark;
+$text: $tertiary;
+$text-light: $white;
 $text-strong: $grey-darker;
 $link: $primary;
 $link-hover: darken($primary, 10%);

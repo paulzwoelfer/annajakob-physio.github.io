@@ -28,12 +28,13 @@
 
 a {
     text-decoration: none;
-    color: #110e38;
+    color: $text;
     transition: all .35s;
 }
 
 body {
     background-color: #f2f6ff;
+    color: $text;
 }
 
 .page-section {

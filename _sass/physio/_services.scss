@@ -56,11 +56,3 @@
     }
 
 }
-
-    /* Mobile styles */
-    @media screen and (max-width: 768px) {
-        .card-container {
-            grid-template-columns: 1fr; /* Display cards in a single column on smaller screens */
-            padding: 10px; /* Reduce padding for smaller screens */
-        }
-    }
