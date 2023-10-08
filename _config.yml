@@ -1,5 +1,7 @@
 # site settings
-title: Physio Anna
+logo: https://static.wixstatic.com/media/1fce07_959fb49da50f46ebbb4de77e861c7bb7~mv2.png/v1/fill/w_204,h_98,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/tm_physiotherapie_Zeichenfl%C3%A4che%201%20Kopie%2050.png
+title: Anna Jakob, BSc
+subtitle: Wahl-Physiotherapeutin
 email: contact@sleuth-ai.com
 description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
 baseurl: "/" # the subpath of your site, e.g. /blog

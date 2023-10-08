@@ -16,6 +16,10 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+
+    h2 {
+        color: $text;
+    }
 }
 
 /* Style for the centered section */
@@ -30,6 +34,7 @@
 .description {
     font-size: 1rem;
     margin-top: 10px;
+    color: $text;
 }
 
 /* Style for the bullet points */
