@@ -58,8 +58,9 @@ $colors: (
 // Typography
 
 $font-family: "Noto Sans NKo Unjoined", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+// "Noto Sans NKo Unjoined", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 //"Lora", "Georgia", "Times New Roman", Times, serif;
-$family-sans-serif: myriad-pro, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-sans-serif: "Noto Sans NKo Unjoined", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; //myriad-pro, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $family-code: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 $family-monospace: monospace;
 $render-mode: optimizeLegibility;
