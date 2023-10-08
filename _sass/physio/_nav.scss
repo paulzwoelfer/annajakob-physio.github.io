@@ -5,6 +5,13 @@
     min-height: 50px;
     margin-bottom: 20px;
     border: 1px solid transparent;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .navbar-fixed-top {
@@ -84,7 +91,7 @@
 
     .logo-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto 1fr;
         grid-gap: 1rem 3rem;
         gap: 20px; 
         align-items: center;
@@ -97,13 +104,21 @@
             }
         }
     
-        .title {
-            font-weight: 600;
-            color: $secondary;
-        }
-    
-        .subtitle {
-            color: $text;
+        .title-container {
+            display: none;
+
+            @include tablet {
+                display: block;
+            }
+
+            .title {
+                font-weight: 600;
+                color: $secondary;
+            }
+        
+            .subtitle {
+                color: $text;
+            }
         }
     }
 
