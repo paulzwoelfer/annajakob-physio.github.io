@@ -30,18 +30,19 @@ sections:
       - title: Dorn-Therapie
         text: Diese Methode ist schonend und wird verwendet, um Beschwerden des Bewegungsapparates zu behandeln. Während der Therapiesitzung führt der Therapeut behutsame und einfühlsame Bewegungen durch, um Wirbel und Gelenke in ihre korrekte Position zu bringen.
       - title: Lymphdrainage
-        text: Die Lymphdrainage ist eine schonende Technik, die dazu dient, das Lymphsystem zu stimulieren und überschüssige Flüssigkeit aus dem Gewebe zurück in die Blutgefäße zu leiten. Bei der komplexen Entstauungstherapie werden darüber hinaus auch Kompressionsverbände verwendet.<br/>Diese Methode wird angewendet, um Ödeme zu behandeln, die akut nach Operationen, Tumorbehandlungen, Traumata usw. auftreten, sowie bei angeborenen Lymphödemen. Sie wirkt sich positiv auf das vegetative Nervensystem aus, insbesondere auf den Nervus sympathicus, und kann daher schmerzlindernde Effekte erzielen.
+        text: Die Lymphdrainage ist eine schonende Technik, die dazu dient, das Lymphsystem zu stimulieren und überschüssige Flüssigkeit aus dem Gewebe zurück in die Blutgefäße zu leiten. Diese Methode wird angewendet, um Schwellungen zu behandeln die z.B. nach Operationen, Tumorbehandlungen, Traumata usw. auftreten. Sie wirkt sich positiv auf das vegetative Nervensystem aus und kann daher schmerzlindernde Effekte erzielen.
       - title: Kinesio-Taping
         text: Kinesiotape wird bei verschiedenen Beschwerden und Verletzungen verwendet. Der körpereigene Heilungsprozess wird stimuliert, indem es Unterstützung und Stabilität bietet, ohne dabei die Beweglichkeit zu beeinflussen. Aus diesem Grund wird das medizinische Tapen oftmals als ergänzende Behandlungsmethode verwendet.
       - title: Manuelle therapie | Triggerpunkte und Fasciatechnik
         text: Some not-so long text here.
-      - title: Sturzprophylaxe und Gangschulung
-        text: Die Sturzprophylaxe setzt es sich zum Ziel, das Sturzrisiko zu vermindern und damit Stürze zu verhindern. Von einem Sturz spricht man dann, wenn ein:e Betroffene:r unbeabsichtigt auf dem Boden aufkommt. Die Verhinderung einer solchen Situation ist Gegenstand der Sturzprophylaxe. <br/>Gangschulung, krankengymnastisches Verfahren zur (Wieder-)Erlangung eines möglichst normalen und gesunden Gangbildes. Sie wird notwendig bei bleibenden Behinderungen, z. B. durch Lähmungen nach einem Schlaganfall, bei vorübergehenden Einschränkungen, z. B. Muskelverspannungen, oder zur Entlastung.
+      - title: Gangschulung und Sturzprophylaxe
+        text: Gangschulung ist ein krankengymnastisches Verfahren zur (Wieder-)Erlangung eines möglichst normalen und gesunden Gangbildes (z. B. nach Lähmungen, Schlaganfall, ...). Die Sturzprophylaxe hingegen setzt es sich zum Ziel, das Sturzrisiko zu vermindern.
       - title: Reha nach Unfall, Verletzungen und Operationen
         text: Some not-so long text here.
       - title: Atemtherapie
         text: Some not-so long text here.
-
+      - title: Klangtherapie
+        text: Relax Therapie für schwangere Frauen.
   - type: procedure.html
     section_id: procedure
     background_style: bg-primary
@@ -75,19 +76,19 @@ sections:
   #      text: Preis 15 Minuten
   #      icon: bi-emoji-heart-eyes
 
-  - type: appointment.html
-    section_id: termin
-    #background_style: bg-info
-    title: Termin
-    subtitle: Hier können Sie einen Termin buchen
-    url: https://startbootstrap.com/
+#  - type: appointment.html
+#    section_id: termin
+#    #background_style: bg-info
+#    title: Termin
+#    subtitle: Hier können Sie einen Termin buchen
+#    url: https://startbootstrap.com/
 
 
   - type: contact.html
     section_id: termin
     title: Termin
     text: >-
-      Über folgende Kanäle können Sie einen Termin bei mir buchen:
+      Um eine Terminbuchung für eine der oben aufgeführten Therapien unter dem Abschnitt 'Behandlungen' bei mir vorzunehmen, haben Sie verschiedene Möglichkeiten zur Auswahl. Sie können dies über die folgenden Kanäle tun:
     actions:
     - title: E-Mail
       icon: mail-outline
