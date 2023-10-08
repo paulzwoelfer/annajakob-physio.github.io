@@ -9,6 +9,20 @@
     text-align: center;
 }
 
+.center-text {
+    text-align: center;
+
+    p {
+        text-align: initial;
+    }
+
+    @include tablet {
+        p {
+            text-align: center;
+        }
+    }
+}
+
 .no-p-margin {
     p {
         margin: 0;

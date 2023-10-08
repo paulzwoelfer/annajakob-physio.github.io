@@ -89,7 +89,7 @@ sections:
   - type: contact.html
     section_id: termin
     title: Termin
-    text: >-
+    text: >
       Um eine Terminbuchung für eine der oben aufgeführten Therapien unter dem Abschnitt 'Behandlungen' bei mir vorzunehmen, haben Sie verschiedene Möglichkeiten zur Auswahl. Sie können dies über die folgenden Kanäle tun:
     actions:
     - title: E-Mail

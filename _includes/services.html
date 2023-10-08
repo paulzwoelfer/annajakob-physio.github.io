@@ -6,7 +6,7 @@
         {% for service in section.services %}
         <div class="card">
           <h3>{{ service.title }}</h3>
-          <p class="description">{{ service.text | markdownify }}</p>
+          {{ service.text | markdownify  | class="description"}}
           {% if service.url %}
             <a href="{{ service.url }}" class="read-more">Mehr erfahren</a>
           {% endif %}
