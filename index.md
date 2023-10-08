@@ -94,13 +94,13 @@ sections:
     actions:
     - title: E-Mail
       icon: mail-outline
-      url: mailto:contact@yourwebsite.com
+      url: mailto:test@gmail.com
     - title: Telefon
       icon: call-outline
-      url: tel:+43 676 
+      url: tel:+43 676
     - title: Instagram
       icon: logo-instagram
-      url: '#'
+      url: https://instagram.com
 
 
 ---

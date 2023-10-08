@@ -13,8 +13,9 @@ tiles-source: pages # accepts "posts" or "pages"
 tiles-count: 6
 
 # social settings
-instagram_url:
-linkedin_url: https://www.linkedin.com/company/sleuth-ai
+instagram_url: https://instagram.com
+email: test@gmail.com
+phone: +43 676
 
 # build settings
 markdown: kramdown
