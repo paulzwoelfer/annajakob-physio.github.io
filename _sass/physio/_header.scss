@@ -11,6 +11,133 @@ header {
             padding-top: 4.5rem;
             padding-bottom: 0;
         }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 0 2rem;
+
+            @include tablet {
+                padding: 0;
+            }
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: 1fr; 
+            grid-template-rows: auto auto auto; 
+            gap: 2rem 1.5rem; 
+            grid-template-areas: 
+            "div1"
+            "div2"
+            "div3";
+
+            .div1 { grid-area: div1; }
+            .div2 { grid-area: div2; }
+            .div3 { grid-area: div3; max-width: 100%;}
+
+
+            @include tablet {
+                grid-template-columns: auto 1fr; 
+                grid-template-rows: min-content 1fr; 
+                gap: 2rem 1.5rem; 
+                grid-template-areas: 
+                  "div1 div3"
+                  "div2 div3"; 
+    
+                .div2 { max-width: 36rem; }
+            }
+            
+          }
+          
+
+
+        .ddh {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .cfo {
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+        }
+
+        .ua {
+            max-width: 80rem;
+        }
+
+        // <div class="gx tv ctg cva cxm cyr czv dag dkg dkn dla">
+        @include desktop {
+            .dla {
+                -moz-column-gap: 2rem;
+                column-gap: 2rem;
+            }
+
+            .dkn {
+                grid-template-rows: repeat(1, minmax(0, 1fr));
+            }
+
+            .dkg {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+
+            .dag {
+                row-gap: 1.5rem;
+            }
+
+            .cva {
+                display: grid;
+            }
+
+            //h1
+
+            .dhh {
+                grid-column: auto;
+            }
+
+            .crw {
+                grid-column: span 2 / span 2;
+            }
+
+            .chz { //Tablet
+                font-size: 3.75rem;
+                line-height: 1;
+            }
+
+            .awd { //all
+                font-weight: 700;
+            }
+
+            .tv {
+                max-width: 42rem;
+            }
+
+            //div
+
+            .dhw {
+                grid-row-start: 1;
+            }
+
+            .dhu {
+                grid-column-end: 1;
+            }
+
+            .uk {
+                max-width: 36rem;
+            }
+
+            //img
+
+            .dhy {
+                grid-row-end: 2;
+            }
+
+            .dhv {
+                grid-row: span 2 / span 2;
+            }
+        }
     }
 
     &.smallhead {
@@ -24,6 +151,6 @@ header {
     }
 
     h1 {
-        color: text;
+        color: $text;
     }
 }
