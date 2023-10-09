@@ -3,7 +3,7 @@ layout: home
 header:
   title: Physio Anna Jakob
   description: Das ist ein super cooler Text über die Anna, die einfach die beste Physiotherapheutin in ganz Graz ist.
-  image: assets/images/Paul.jpg
+  image: assets/images/Anna.jpg
   #action: # action button is optional
     #label: 
     #url: 
