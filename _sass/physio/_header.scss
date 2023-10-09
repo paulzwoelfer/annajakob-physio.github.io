@@ -47,7 +47,14 @@ header {
                   "div1 div3"
                   "div2 div3"; 
     
-                .div2 { max-width: 36rem; }
+                .div1 { 
+                    //padding: 2rem 0 0;
+                }
+
+                .div2 { 
+                    max-width: 36rem; 
+                }
+
                 .div3 {
                     max-height: 400px;
                 }

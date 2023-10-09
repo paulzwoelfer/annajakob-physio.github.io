@@ -1,7 +1,7 @@
 ---
 layout: home
 header:
-  title: Physio Anna Jakob
+  title: Physiotherapeutin
   description: Das ist ein super cooler Text über die Anna, die einfach die beste Physiotherapheutin in ganz Graz ist.
   image: assets/images/Anna.jpg
   #action: # action button is optional
@@ -50,12 +50,12 @@ sections:
     background_style: bg-primary
     title: Ablauf der Physiotherapie
     text: > 
-      Für Ihre Behandlung benötigen Sie eine ärztliche Verordnung. Diese erhalten sie von der Ärztin/vom Arzt Ihres Vertrauens.Die Verordnung muss neben persönlichen Daten folgende Informationen beinhalten:
+      Vor Beginn Ihrer physiotherapeutischen Behandlung ist eine ärztliche Verordnung erforderlich. Diese erhalten Sie von Ihrem Arzt oder Ihrer Ärztin. Die Verordnung sollte neben Ihren persönlichen Angaben folgende Informationen enthalten:
     list:
-      - eine medizinische Diagnose
-      - die Anzahl der Behandlungseinheiten und
-      - die verordnete Behandlung (z.B. Physiotherapie à 45 Minuten)
-    text2: Die Verordnung muss bereits vor der ersten Einheit vom zuständigen Krankenversicherungsträger bewilligt werden.
+      - Eine präzise medizinische Diagnose.
+      - Die Anzahl der verordneten Therapiesitzungen.
+      - Die Art der verschriebenen Behandlung (z.B. Physiotherapie für 45 Minuten).
+    text2: Wichtig ist, dass die Verordnung vor Ihrem ersten Termin von Ihrer zuständigen Krankenversicherungsgesellschaft genehmigt wird. <br/><br/>Sobald Sie die ärztliche Verordnung haben und die Zustimmung Ihrer Krankenversicherung erhalten haben, können Sie sich für Ihre erste Therapiesitzung vorbereiten. Unser Team wird sich dann mit Ihnen in Verbindung setzen, um einen Termin zu vereinbaren und Ihnen weitere Informationen zum Ablauf Ihrer Therapie zu geben.<br/><br/>Wir freuen uns darauf, Ihnen bei Ihrer Genesung zu helfen und stehen Ihnen gerne für alle Fragen zur Verfügung.
 
   #- type: services.html
   #  section_id: preis
