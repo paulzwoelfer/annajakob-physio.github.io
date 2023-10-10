@@ -36,7 +36,7 @@ sections:
       - title: Kinesio-Taping
         text: Kinesiotape wird bei verschiedenen Beschwerden und Verletzungen verwendet. Der körpereigene Heilungsprozess wird stimuliert, indem es Unterstützung und Stabilität bietet, ohne dabei die Beweglichkeit zu beeinflussen. Aus diesem Grund wird das medizinische Tapen oftmals als ergänzende Behandlungsmethode verwendet.
       - title: Manuelle therapie | Triggerpunkte und Fasciatechnik
-        text: Some not-so long text here.
+        text: Manuelle Therapie ist eine therapeutische Methode, die sich mit Funktionsstörungen des Bewegungsapparates befasst. Sie basiert auf speziellen manuellen Handgriffen und Mobilisationstechniken, die dazu dienen, Schmerzen zu reduzieren und Bewegungseinschränkungen zu beheben.
       - title: Gangschulung und Sturzprophylaxe
         text: Gangschulung ist ein krankengymnastisches Verfahren zur (Wieder-)Erlangung eines möglichst normalen und gesunden Gangbildes (z. B. nach Lähmungen, Schlaganfall, ...). Die Sturzprophylaxe hingegen setzt es sich zum Ziel, das Sturzrisiko zu vermindern.
       - title: Physiotherapie nach Unfall, Verletzungen und Operationen
