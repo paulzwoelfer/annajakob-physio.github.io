@@ -41,8 +41,6 @@ sections:
         text: Gangschulung ist ein krankengymnastisches Verfahren zur (Wieder-)Erlangung eines möglichst normalen und gesunden Gangbildes (z. B. nach Lähmungen, Schlaganfall, ...). Die Sturzprophylaxe hingegen setzt es sich zum Ziel, das Sturzrisiko zu vermindern.
       - title: Reha nach Unfall, Verletzungen und Operationen
         text: Some not-so long text here.
-      - title: Atemtherapie
-        text: Some not-so long text here.
       - title: Klangtherapie
         text: Relax Therapie für schwangere Frauen.
   - type: procedure.html

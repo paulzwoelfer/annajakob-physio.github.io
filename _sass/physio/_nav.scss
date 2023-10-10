@@ -54,6 +54,10 @@
             .nav-link {
                 font-family: $font-family;
                 color: $text;
+
+                &:hover {
+                    color: $secondary;
+                }
             }
         }
     }
