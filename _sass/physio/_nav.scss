@@ -78,6 +78,10 @@
             .nav-item {
                 .nav-link {
                     color: $text;
+
+                    &:hover {
+                        color: $secondary;
+                    }
                 }
             }
         }
