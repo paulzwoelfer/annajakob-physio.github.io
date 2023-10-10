@@ -1,8 +1,8 @@
 ---
 layout: home
 header:
-  title: Physiotherapeutin
-  description: Das ist ein super cooler Text über die Anna, die einfach die beste Physiotherapheutin in ganz Graz ist.
+  title: Anna Jakob, BSc
+  description: In meiner Tätigkeit als zertifizierte Schroth-Therapeutin liegt mein Schwerpunkt auf der ganzheitlichen Behandlung von Skoliose und anderen orthopädischen Erkrankungen. Dies betrifft sowohl Kinder als auch Erwachsene, bei denen ich mich speziell der Therapie und Stabilisierung der Wirbelsäule widme. <br/><br/>Sie können sich in Bezug auf andere Probleme im Bereich des Bewegungsapparat auf meine Expertise und Unterstützung verlassen.
   image: assets/images/Anna.jpg
   #action: # action button is optional
     #label: 
