@@ -41,8 +41,8 @@ sections:
         text: Gangschulung ist ein krankengymnastisches Verfahren zur (Wieder-)Erlangung eines möglichst normalen und gesunden Gangbildes (z. B. nach Lähmungen, Schlaganfall, ...). Die Sturzprophylaxe hingegen setzt es sich zum Ziel, das Sturzrisiko zu vermindern.
       - title: Physiotherapie nach Unfall, Verletzungen und Operationen
         text: Nach Unfällen wie Knochenbrüchen, Muskelverletzungen, Sehnen- und Bandverletzungen usw. spielt die Physiotherapie eine entscheidende Rolle, um den optimalen Heilungsverlauf zu fördern. Hauptziele sind dabei die Steigerung der Beweglichkeit und die Kräftigung, um eine schnelle Rückkehr in den Alltag zu ermöglichen.
-      - title: Klangtherapie
-        text: Relax Therapie für schwangere Frauen.
+      - title: Schröpfen
+        text: Beim Schröpfen platziert man Schröpfgefäße auf der Haut, die ein Vakuum erzeugen, um Flüssigkeiten zu mobilisieren und Gewebe zu dehnen. Dies fördert aktiv Stoffwechsel- und Heilungsprozesse im Körper und dient gleichzeitig der Behandlung von örtlichen Verspannungen und Schmerzen.
   - type: procedure.html
     section_id: procedure
     background_style: bg-primary
@@ -95,7 +95,7 @@ sections:
       url: mailto:test@gmail.com
     - title: Telefon
       icon: call-outline
-      url: tel:+43 676
+      url: tel:+43 676 7988622
     - title: Instagram
       icon: logo-instagram
       url: https://instagram.com
