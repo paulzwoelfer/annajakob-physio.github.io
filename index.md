@@ -35,14 +35,14 @@ sections:
         text: Die Lymphdrainage ist eine schonende Technik, die dazu dient, das Lymphsystem zu stimulieren und überschüssige Flüssigkeit aus dem Gewebe zurück in die Blutgefäße zu leiten. Diese Methode wird angewendet, um Schwellungen zu behandeln die z.B. nach Operationen, Tumorbehandlungen, Traumata usw. auftreten. Sie wirkt sich positiv auf das vegetative Nervensystem aus und kann daher schmerzlindernde Effekte erzielen.
       - title: Kinesio-Taping
         text: Kinesiotape wird bei verschiedenen Beschwerden und Verletzungen verwendet. Der körpereigene Heilungsprozess wird stimuliert, indem es Unterstützung und Stabilität bietet, ohne dabei die Beweglichkeit zu beeinflussen. Aus diesem Grund wird das medizinische Tapen oftmals als ergänzende Behandlungsmethode verwendet.
+      - title: Schröpfen
+        text: Beim Schröpfen platziert man Schröpfgefäße auf der Haut, die ein Vakuum erzeugen, um Flüssigkeiten zu mobilisieren und Gewebe zu dehnen. Dies fördert aktiv Stoffwechsel- und Heilungsprozesse im Körper und dient gleichzeitig der Behandlung von örtlichen Verspannungen und Schmerzen.
       - title: Manuelle therapie | Triggerpunkte und Fasciatechnik
         text: Manuelle Therapie ist eine therapeutische Methode, die sich mit Funktionsstörungen des Bewegungsapparates befasst. Sie basiert auf speziellen manuellen Handgriffen und Mobilisationstechniken, die dazu dienen, Schmerzen zu reduzieren und Bewegungseinschränkungen zu beheben.
       - title: Gangschulung und Sturzprophylaxe
-        text: Gangschulung ist ein krankengymnastisches Verfahren zur (Wieder-)Erlangung eines möglichst normalen und gesunden Gangbildes (z. B. nach Lähmungen, Schlaganfall, ...). Die Sturzprophylaxe hingegen setzt es sich zum Ziel, das Sturzrisiko zu vermindern.
+        text: Gangschulung ist ein krankengymnastisches Verfahren zur Erlangung bzw. Wiedererlangung eines möglichst normalen und gesunden Gangbildes (z.B. nach Lähmungen, Schlaganfall). Die Sturzprophylaxe hingegen setzt es sich zum Ziel, das Sturzrisiko zu vermindern.
       - title: Physiotherapie nach Unfall, Verletzungen und Operationen
         text: Nach Unfällen wie Knochenbrüchen, Muskelverletzungen, Sehnen- und Bandverletzungen usw. spielt die Physiotherapie eine entscheidende Rolle, um den optimalen Heilungsverlauf zu fördern. Hauptziele sind dabei die Steigerung der Beweglichkeit und die Kräftigung, um eine schnelle Rückkehr in den Alltag zu ermöglichen.
-      - title: Schröpfen
-        text: Beim Schröpfen platziert man Schröpfgefäße auf der Haut, die ein Vakuum erzeugen, um Flüssigkeiten zu mobilisieren und Gewebe zu dehnen. Dies fördert aktiv Stoffwechsel- und Heilungsprozesse im Körper und dient gleichzeitig der Behandlung von örtlichen Verspannungen und Schmerzen.
   - type: procedure.html
     section_id: procedure
     background_style: bg-primary
