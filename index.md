@@ -2,7 +2,7 @@
 layout: home
 header:
   title: Anna Jakob, BSc
-  description: In meiner Tätigkeit als zertifizierte Schroth-Therapeutin liegt mein Schwerpunkt auf der ganzheitlichen Behandlung von Skoliose und anderen orthopädischen Erkrankungen. Dies betrifft sowohl Kinder als auch Erwachsene, bei denen ich mich speziell der Therapie und Stabilisierung der Wirbelsäule widme. <br/><br/>Sie können sich in Bezug auf andere Probleme im Bereich des Bewegungsapparat auf meine Expertise und Unterstützung verlassen.
+  description: In meiner Tätigkeit als zertifizierte Schroth-Therapeutin in Graz liegt mein Schwerpunkt auf der ganzheitlichen Behandlung von Skoliose und anderen orthopädischen Erkrankungen. Dies betrifft sowohl Kinder als auch Erwachsene, bei denen ich mich speziell der Therapie und Stabilisierung der Wirbelsäule widme. <br/><br/>Sie können sich in Bezug auf andere Probleme im Bereich des Bewegungsapparat auf meine Expertise und Unterstützung verlassen.
   image: assets/images/Anna.jpg
   #action: # action button is optional
     #label: 
@@ -27,7 +27,7 @@ sections:
     services:
       - title: Bewegungstherapie / Physiotherapie
         text: Eine Behandlungsmethode, die Bewegung und Übungen verwendet, um Schmerzen zu lindern, die Beweglichkeit zu verbessern und die körperliche Funktion wiederherzustellen. 
-      - title: Schroth Therapie
+      - title: Schroth-Therapie
         text: Das Therapieverfahren nach Katharina Schroth ist eine physiotherapeutische Methode, die darauf abzielt, die ungleichmäßige Entwicklung der Wirbelsäule bei Kindern und Erwachsenen zu reduzieren und die damit verbundenen Gesundheitsprobleme zu behandeln.
       - title: Dorn-Therapie
         text: Diese Methode ist schonend und wird verwendet, um Beschwerden des Bewegungsapparates zu behandeln. Während der Therapiesitzung führt der Therapeut behutsame und einfühlsame Bewegungen durch, um Wirbel und Gelenke in ihre korrekte Position zu bringen.

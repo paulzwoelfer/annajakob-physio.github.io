@@ -1,11 +1,14 @@
 # site settings
 logo: assets/images/Logo.png
-title: Anna Jakob, BSc
+title: Physitoherapie Anna Jakob, BSc
+name: Anna Jakob, BSc
 subtitle: Wahl-Physiotherapeutin
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+description: In meiner Tätigkeit als zertifizierte Schroth-Therapeutin in Graz liegt mein Schwerpunkt auf der ganzheitlichen Behandlung von Skoliose und anderen orthopädischen Erkrankungen. Dies betrifft sowohl Kinder als auch Erwachsene, bei denen ich mich speziell der Therapie und Stabilisierung der Wirbelsäule widme. Sie können sich in Bezug auf andere Probleme im Bereich des Bewegungsapparat auf meine Expertise und Unterstützung verlassen.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: https://pyhsio-annajakob.com # the base hostname & protocol for your site
 author:
+og_site_name: Webseite der Wahl-Physiotherapeutin Anna Jakob
+og_image: assets/images/og_image.png
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
