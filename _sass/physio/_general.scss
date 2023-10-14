@@ -76,6 +76,10 @@ a {
     }
 }
 
+.full-size {
+    min-height: 150px;
+}
+
 .bg-primary {
     background-color: $primary;
     color: $white;
