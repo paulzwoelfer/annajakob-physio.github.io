@@ -1,0 +1,12 @@
+.text-page {
+    margin: 0 auto;
+    max-width: 600px;
+
+    a {
+        text-decoration: underline;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+}

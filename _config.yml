@@ -18,6 +18,7 @@ tiles-count: 6
 instagram_url: https://instagram.com
 email: test@gmail.com
 phone: +43 676 7988622
+UID: 
 
 # build settings
 markdown: kramdown
