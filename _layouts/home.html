@@ -15,7 +15,12 @@ layout: base
                     {% endif %}
                 </div>
             </div>
-            <img src="{{ page.header.image | relative_url }}" alt="" class="div3">
+            <picture class="div3"> 
+                <source type="image/webp" srcset="{{ page.header.image_webp | relative_url }}"> 
+                <source type="image/jpeg" srcset="{{ page.header.image | relative_url }}"> 
+                <img src="{{ page.header.image | relative_url }}" alt="{{ page.header.image_alt }}" > 
+            </picture>
+            <!--<img src="{{ page.header.image | relative_url }}" alt="{{ page.header.image_alt }}" class="div3">-->
         </div>
 
             <!--<div class="gx tv ctg cva cxm cyr czv dag dkg dkn dla">

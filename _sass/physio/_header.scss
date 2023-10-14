@@ -36,7 +36,14 @@ header {
 
             .div1 { grid-area: div1; }
             .div2 { grid-area: div2; }
-            .div3 { grid-area: div3; max-width: 100%;}
+            .div3 { 
+                grid-area: div3; 
+                max-width: 100%;
+
+                img {
+                    max-width: 100%;
+                }
+            }
 
 
             @include tablet {
@@ -57,6 +64,10 @@ header {
 
                 .div3 {
                     max-height: 400px;
+
+                    img {
+                        max-height: 400px;
+                    }
                 }
             }
             
