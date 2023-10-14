@@ -7,8 +7,8 @@ permalink: impressum
 <div class="inner text-page">
     <p>
         <span>Anna Jakob, BSc</span><br/>
-        <span>Mondscheingasse 10/5, </span><br/>
-        <span>8010 Graz</span>
+        <span>{{ site.adresse }}, </span><br/>
+        <span>{{ site.city }}</span>
     </p>
     <p>
         <span>Tel. 

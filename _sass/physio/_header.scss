@@ -42,6 +42,8 @@ header {
 
                 img {
                     max-width: 100%;
+                    border-radius: 16px;
+                    box-shadow: none;
                 }
             }
 
@@ -67,6 +69,8 @@ header {
 
                     img {
                         max-height: 400px;
+                        border-radius: 60px;
+                        box-shadow: 0 100px 80px #1495a712, 0 41.7776px 33.4221px #1495a70d, 0 22.3363px 17.869px #1495a70b, 0 12.5216px 10.0172px #1495a709, 0 6.6501px 5.32008px #1495a707, 0 2.76726px 2.21381px #1495a705;
                     }
                 }
             }
