@@ -92,6 +92,9 @@ sections:
     text: >
       Um eine Terminbuchung für eine der oben aufgeführten Therapien unter dem Abschnitt 'Behandlungen' bei mir vorzunehmen, haben Sie verschiedene Möglichkeiten zur Auswahl. Sie können dies über die folgenden Kanäle tun:
     actions:
+    - title: Online
+      icon: calendar-outline
+      url: https://calendly.com/physio-annajakob
     - title: E-Mail
       icon: mail-outline
       url: mailto:physio.annajakob@gmail.com
