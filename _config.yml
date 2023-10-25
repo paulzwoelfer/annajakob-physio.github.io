@@ -6,6 +6,7 @@ subtitle: Wahl-Physiotherapeutin
 description: In meiner Tätigkeit als zertifizierte Schroth-Therapeutin in Graz liegt mein Schwerpunkt auf der ganzheitlichen Behandlung von Skoliose und anderen orthopädischen Erkrankungen.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: https://physio-annajakob.com # the base hostname & protocol for your site
+url_alternate: https://www.physio-annajakob.com
 author:
 og_site_name: Website der Wahl-Physiotherapeutin Anna Jakob
 og_image: assets/images/og_image.png
