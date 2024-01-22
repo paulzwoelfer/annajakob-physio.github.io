@@ -20,9 +20,6 @@ permalink: impressum
             <a href="mailto:{{site.email}}">{{site.email}}</a>
         </span>
     </p>
-    <p>
-        <span>UID: {{site.UID}}</span>
-    </p>
 
    <p><span><strong>Disclaimer</strong></span></p>
 
