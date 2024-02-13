@@ -28,7 +28,7 @@
     .logo {
         max-width: 100%;
 
-        @include desktop {
+        @include tablet {
             width: 50%;
             margin: auto;
         }
