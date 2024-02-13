@@ -104,6 +104,9 @@ sections:
     - title: Instagram
       icon: logo-instagram
       url: https://instagram.com/physio_anna_jakob
+    adresse1: Alle Termine finden an folgender Adresse statt:<br/>
+    logo: assets/images/PraxisMiteinander.png
+    adresse2: Pestalozzistraße 6, 8010 Graz
 
 
 ---

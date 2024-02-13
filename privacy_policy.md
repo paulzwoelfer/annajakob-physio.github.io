@@ -18,7 +18,7 @@ permalink: datenschutz
     <div>
         <h3>VERANTWORTLICHER</h3>
         <div>Anna Jakob, BSc</div>
-        <div>{{ site.adresse }}, <br/>{{ site.city }}</div>
+        <div>{{ site.praxis_name }}, <br/>{{ site.adresse }}, <br/>{{ site.city }}</div>
         <a href="mailto:{{ site.email }}">{{ site.email }}</a>
     </div>
     <br/>
@@ -121,6 +121,13 @@ permalink: datenschutz
                             https://www.facebook.com/legal/controller_addendum
                         </li>
                     </ol>
+                </div>
+            </div>
+            <div>
+                <h5>Synaptos</h5>
+                <div>
+                    <p>Auf dieser Seite sind Funktionen des Dienstes smartTherapy (synaptos) eingebunden (Online-Terminanfrage). Anbieter dieses Dienstes ist die Synaptos GmbH, St. Veiter Straße 188/1 EG, 9020 Klagenfurt am Wörthersee, Österreich. smartTherapy (synaptos) ist eine browserbasierte Praxissoftware für Therapeut:innen, Ärzt:innen und alle Selbstständigen im Gesundheitswesen. Daten, welche Sie an Synaptos weitergeben, werden dort empfangen, verarbeitet und gespeichert. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Synaptos:</p>
+                    <a href="https://synaptos.at/datenschutzerklaerung" target="_blank">https://synaptos.at/datenschutzerklaerung</a>
                 </div>
             </div>
         </div>
