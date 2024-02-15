@@ -98,7 +98,7 @@ sections:
     - title: E-Mail
       icon: mail-outline
       url: mailto:physio.annajakob@gmail.com
-    - title: Telefon
+    - title: +43 676 7988622
       icon: call-outline
       url: tel:+43 676 7988622
     - title: Instagram
