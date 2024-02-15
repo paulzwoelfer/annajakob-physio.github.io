@@ -1,0 +1,17 @@
+<section id="{{ section.section_id }}" class="page-section {{ section.background_style }}">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8 col-xl-6 center-text">
+          <h2 class="mt-0">{{ section.title }}</h2>
+          <hr class="divider"/>
+        </div>
+      </div>
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8 col-xl-6 center-text">
+            {% for tage in section.tage %}
+                <p>{{ tage.tag }}: {{ tage.zeit }}</p>
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>

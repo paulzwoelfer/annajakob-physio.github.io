@@ -32,6 +32,14 @@
   overflow: hidden;
   background: $primary;
 
+  .logo {
+    max-width: 100%;
+
+    @include tablet {
+        width: 50%;
+        margin: auto;
+    }
+  }
 
 
   .social {

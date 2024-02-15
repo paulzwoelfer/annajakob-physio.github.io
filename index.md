@@ -104,9 +104,28 @@ sections:
     - title: Instagram
       icon: logo-instagram
       url: https://instagram.com/physio_anna_jakob
-    adresse1: Alle Termine finden an folgender Adresse statt:<br/>
-    logo: assets/images/PraxisMiteinander.png
-    adresse2: Pestalozzistraße 6, 8010 Graz
 
+  - type: adresse.html
+    section_id: adresse
+    background_style: bg-primary
+    title: Adresse
+    text: Alle Termine finden an folgender Adresse statt<br/>
+    logo: assets/images/PraxisMiteinander.png
+    adresse: Pestalozzistraße 6, 8010 Graz
+
+  - type: opening.html
+    section_id: oeffnungszeiten
+    title: Öffnungszeiten
+    tage:
+    - tag: Montag
+      zeit: 07:00 bis 14:30
+    - tag: Dienstag
+      zeit: 13:30 bis 18:00
+    - tag: Mittwoch
+      zeit: 13:30 bis 18:00
+    - tag: Donnerstag
+      zeit: 13:30 bis 18:00
+    - tag: Freitag
+      zeit: 07:00 bis 14:30
 
 ---
