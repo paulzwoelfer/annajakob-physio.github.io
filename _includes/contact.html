@@ -10,10 +10,17 @@
       <div class="row gx-4 gx-lg-5 justify-content-center mb-5 icon-container">
         {% for action in section.actions %}
         <div class="col ml-auto text-center">
-          <a class="icon-link" target="_blank" href="{{ action.url }}">
-            <ion-icon class="icon" name="{{ action.icon }}"></ion-icon>
-            {{ action.title }}
-          </a>
+          {% if action.self %}
+            <a class="icon-link {{ action.class }}" href="{{ action.url }}">
+              <ion-icon class="icon" name="{{ action.icon }}"></ion-icon>
+              {{ action.title }}
+            </a>
+          {% else %}
+            <a class="icon-link" target="_blank" href="{{ action.url }}">
+              <ion-icon class="icon" name="{{ action.icon }}"></ion-icon>
+              {{ action.title }}
+            </a>
+          {% endif %}
         </div>
         {% endfor %}
       </div>
