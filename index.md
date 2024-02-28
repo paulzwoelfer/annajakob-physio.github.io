@@ -120,14 +120,12 @@ sections:
     title: Öffnungszeiten
     tage:
     - tag: Montag
-      zeit: 07:00 bis 14:30
+      zeit: 08:00 bis 15:00
     - tag: Dienstag
       zeit: 14:00 bis 18:00
     - tag: Mittwoch
       zeit: 14:00 bis 18:00
     - tag: Donnerstag
       zeit: 14:00 bis 18:00
-    - tag: Freitag
-      zeit: 07:00 bis 14:30
 
 ---
