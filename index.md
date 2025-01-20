@@ -55,7 +55,7 @@ sections:
       - Eine präzise medizinische Diagnose.
       - Die Anzahl der verordneten Therapiesitzungen.
       - Die Art der verschriebenen Behandlung (z.B. Physiotherapie für 45 Minuten).
-    text2: Wichtig ist, dass die Verordnung vor Ihrem ersten Termin von Ihrer zuständigen Krankenversicherungsgesellschaft genehmigt wird. <br/><br/>Sobald Sie die ärztliche Verordnung haben und die Zustimmung Ihrer Krankenversicherung erhalten haben, können Sie sich für Ihre erste Therapiesitzung vorbereiten.<br/><br/>Ich freue mich darauf, Ihnen bei Ihrer Genesung zu helfen und stehen Ihnen gerne für alle Fragen zur Verfügung.
+    text2: Sobald Sie die ärztliche Verordnung haben, können Sie sich für Ihre erste Therapiesitzung vorbereiten.<br/><br/>Ich freue mich darauf, Ihnen bei Ihrer Genesung zu helfen und stehen Ihnen gerne für alle Fragen zur Verfügung.
 
   #- type: services.html
   #  section_id: preis
