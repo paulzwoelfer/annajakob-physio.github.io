@@ -118,14 +118,15 @@ sections:
   - type: opening.html
     section_id: oeffnungszeiten
     title: Öffnungszeiten
-    tage:
-    - tag: Montag
-      zeit: 08:00 bis 15:00
-    - tag: Dienstag
-      zeit: 14:00 bis 18:00
-    - tag: Mittwoch
-      zeit: 14:00 bis 18:00
-    - tag: Donnerstag
-      zeit: 14:00 bis 18:00
+    text: Nach Vereinbarung, oder <a href="/termin">online buchbar</a>
+    #tage:
+    #- tag: Montag
+    #  zeit: 08:00 bis 15:00
+    #- tag: Dienstag
+    #  zeit: 14:00 bis 18:00
+    #- tag: Mittwoch
+    #  zeit: 14:00 bis 18:00
+    #- tag: Donnerstag
+    #  zeit: 14:00 bis 18:00
 
 ---
