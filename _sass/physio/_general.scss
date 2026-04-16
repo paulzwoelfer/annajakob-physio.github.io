@@ -57,6 +57,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font-family;
 }
 
+h2 {
+    font-weight: 400;
+    color: $primary;
+    font-size: 40px;
+}
+
 a {
     &:hover {
         color: $secondary;
@@ -82,7 +88,10 @@ a {
 
 .bg-primary {
     background-color: $primary;
-    color: $text;
+    color: $text-light;
+}
+.bg-light-a {
+    background-color: $background;
 }
 
 
@@ -95,7 +104,7 @@ a {
   }
 
   .container {
-    max-width: 1200px;
+    max-width: 1400px;
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 auto;
@@ -117,8 +126,9 @@ a {
       row-gap: 2rem;
       flex-direction: row;
       box-sizing: border-box;
-      margin-left: -10px;
-      margin-right: -10px;
+      margin: 0;
+    //   margin-left: -10px;
+    //   margin-right: -10px;
 
       .col-12 {
         width: 100%;
@@ -127,6 +137,10 @@ a {
       .col {
         padding-left: 10px;
         padding-right: 10px;
+      }
+
+      & > * {
+        padding: 0;
       }
 
     }

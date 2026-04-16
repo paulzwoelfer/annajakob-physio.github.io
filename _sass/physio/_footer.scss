@@ -28,46 +28,41 @@
 .footer {
   position: relative;
   margin-top: 44px;
-  padding: 96px 0 60px;
+  padding: 54px 0 14px;
   overflow: hidden;
   background: $primary;
 
-  .logo {
-    max-width: 100%;
+  .space-bottom {
+    padding: 0 0 30px;
 
     @include tablet {
-        width: 50%;
-        margin: auto;
+      padding: 0 0 70px;
     }
   }
 
+  .text {
+    color: $text-light;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 117%;
+    padding: 0;
+  }
 
   .social {
-    margin-bottom: 40px;
 
     &__list {
       display: flex;
-      justify-content: center;
-      align-items: space-between;
+      justify-content: space-evenly;
+      align-items: center;
       flex-wrap: wrap;
+      gap: 10px;
     }
 
     &__item {
-      margin: 0 10px;
-      font-size: 0;
-    }
-    
-    &__link {
       display: flex;
-      justify-content: center;
       align-items: center;
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
-      font-size: 16px;
-      border-radius: 50%;
-      color: $text;
-      background: $white;
+      color: $text-light;
+
       transition: all .25s;
       will-change: transform;
 
@@ -75,7 +70,49 @@
         transform: scale(0.9);
       }
     }
+    
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 20px;
+      height: 20px;
+      padding: 10px;
+      margin: 0 10px 0 0;
+
+      border-radius: 50%;
+      color: $primary;
+      background: $secondary;
+      --ionicon-stroke-width: 50px;
+    }
   }
+
+  .appointment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+
+      border-radius: 327px;
+      color: $primary;
+      background: $secondary;
+      font-weight: 600;
+      padding: 12px 30px;
+
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
+  }
+
+
   .footer_nav {
     text-align: center;
 
@@ -86,17 +123,33 @@
     }
 
     &__link {
-      font-size: 16px;
-      font-weight: 600;
-      color: $text;
+      font-size: 1rem;
+      color: $text-light;
     }
   }
 
   .copyright {
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
-    text-align: center;
-    color: $text;
+    color: $text-light;
+
+    p {
+      margin: 0;
+    }
+
+    @include tablet {
+      flex-direction: row;
+    }
+
+    .desktop-not-mobile {
+      display: none;
+
+      @include tablet {
+        display: block;
+      }
+    }
   }
 }

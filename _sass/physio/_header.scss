@@ -3,13 +3,17 @@ header {
     &.masthead {
         padding-top: 10rem;
         padding-bottom: calc(10rem - 4.5rem);
+        color: $text-light;
         background: $primary;
+        -webkit-border-radius:  100% 100% 100% 100% / 0% 0% 100% 100%;
+        border-radius: 100% 100% 100% 100% / 0% 0% 10% 10%;
 
         @include desktop {
-            height: 100vh;
+            height: auto;
             min-height: 40rem;
             padding-top: 4.5rem;
             padding-bottom: 0;
+
         }
 
         .container {
@@ -20,7 +24,7 @@ header {
             padding: 0 2rem;
 
             @include tablet {
-                padding: 0;
+                padding: 30px 10px 0;
             }
         }
 
@@ -31,13 +35,23 @@ header {
             gap: 2rem 1.5rem; 
             grid-template-areas: 
             "div1"
-            "div2"
-            "div3";
+            "picture";
 
-            .div1 { grid-area: div1; }
-            .div2 { grid-area: div2; }
-            .div3 { 
-                grid-area: div3; 
+            .div4 { grid-area: div4; font-size: 21px; margin: 0; color: $text-light;} 
+            .div1 { 
+                grid-area: div1; 
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                color: $secondary; 
+                font-size: 40px;}
+
+            .div2 { color: $text-light; padding: 50px 0 0; p {font-size: 1rem;}}
+
+            .picture { 
+                grid-area: picture; 
                 max-width: 100%;
 
                 img {
@@ -49,26 +63,21 @@ header {
 
 
             @include tablet {
-                grid-template-columns: auto 1fr; 
+                grid-template-columns: minmax(auto, 1180px) auto; 
                 grid-template-rows: min-content 1fr; 
                 gap: 2rem 1.5rem; 
                 grid-template-areas: 
-                  "div1 div3"
-                  "div2 div3"; 
-    
-                .div1 { 
-                    //padding: 2rem 0 0;
-                }
+                  "div1 picture"; 
 
                 .div2 { 
-                    max-width: 36rem; 
+                    max-width: 40rem; 
                 }
 
-                .div3 {
-                    max-height: 400px;
+                .picture {
+                    max-height: 500px;
 
                     img {
-                        max-height: 400px;
+                        max-height: 500px;
                         border-radius: 60px;
                         box-shadow: 0 100px 80px #1495a712, 0 41.7776px 33.4221px #1495a70d, 0 22.3363px 17.869px #1495a70b, 0 12.5216px 10.0172px #1495a709, 0 6.6501px 5.32008px #1495a707, 0 2.76726px 2.21381px #1495a705;
                     }
@@ -173,9 +182,5 @@ header {
             padding-top: 10rem;
             padding-bottom: 0;
         }
-    }
-
-    h1 {
-        color: $text;
     }
 }

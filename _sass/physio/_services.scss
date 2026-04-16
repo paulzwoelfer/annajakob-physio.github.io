@@ -14,6 +14,7 @@
     /* Style for the card with a Glassmorphism effect */
     .card {
         background: rgba(255, 255, 255, 0.2); /* Adjust the alpha (transparency) value to control the Glassmorphism effect */
+        border: none;
         border-radius: 8px;
         text-align: center;
         padding: 20px;
@@ -28,7 +29,10 @@
 
         /* Style for the card title */
         h3 {
-            font-size: 1.5rem;
+            color: $primary;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 120%;
             margin-top: 10px;
         }
         

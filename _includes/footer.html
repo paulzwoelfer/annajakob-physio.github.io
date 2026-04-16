@@ -8,59 +8,29 @@
     <div class="container">
       <div class="row">
         <div class="col col-12">
-        
-          <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 col-xl-6 center-text">
-              <img class="logo mb-2" src="{{ 'assets/images/PraxisMiteinander.png' | relative_url }} " alt="Praxis Miteinander"><br/>
-              <p class="mb-5">{{ site.adresse }}, {{ site.city }}</p>
+          <div class="row gx-4 gx-lg-5 space-bottom">
+            <div class="col-lg-8 col-xl-4">
+              <p class="text">Haben Sie Fragen? <br/> Kontaktieren Sie mich gerne!</p>
+            </div>
+            <div class="col-lg-8 col-xl-5 social__list">
+              <a aria-label="icon phone" class="social__item" href="tel:{{site.phone}}" target="_blank"><ion-icon class="social__link" name="call-outline"></ion-icon>{{site.phone}}</a>
+              <a aria-label="icon email" class="social__item" href="mailto:{{ site.email }}" target="_blank"><ion-icon class="social__link" name="mail-outline"></ion-icon>{{ site.email }}</a>
+            </div>
+            <div class="col-lg-8 col-xl-3 appointment">
+              <a href="/termin" target="_blank">Online Terminvereinbaren</a>
             </div>
           </div>
 
-          <div class="social">
-              <ul class="social__list list-reset">
-              
-                  <li class="social__item">
-                      <a aria-label="icon" class="social__link" href="mailto:{{ site.email }}" rel="noopener" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
-                  </li>
-
-                  <li class="social__item">
-                      <a aria-label="icon" class="social__link" href="tel:{{site.phone}}" rel="noopener" target="_blank"><ion-icon name="call-outline"></ion-icon></a>
-                  </li>
-
-                  <li class="social__item">
-                      <a aria-label="icon" class="social__link" href="{{site.instagram_url}}" rel="noopener" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                  </li>
-                  
-                  <!-- <li class="social__item">
-                      <a aria-label="icon" class="social__link" href="https://facebook.com" rel="noopener" target="_blank"><ion-icon name="logo-facebook"></ion-icon></i></a>
-                  </li> -->
-              
-              </ul>
+  
+          <div id="copyright" class="copyright">
+            <div class="">
+              <span>Copyright &copy&nbsp;</span>
+              <span id="copyright-icon"> <script>document.getElementById("copyright-icon").innerHTML = new Date().getFullYear() + "&nbsp;";</script></span>
+            </div>
+            <p>Anna Jakob - Wahl-Physiotherapeutin</p>
+            <p class="desktop-not-mobile ">&nbsp;|&nbsp;</p>
+            <p><a class='footer_nav__link' href='/impressum'>Impressum</a> | <a class='footer_nav__link' href='/datenschutz'>Datenschutz</a></p>
           </div>
-  
-  
-          <ul class="footer_nav list-reset">
-            
-            <!--<li class="footer_nav__item">
-              <a class="footer_nav__link" href="/">Home</a>
-            </li>-->
-            
-            <li class="footer_nav__item">
-              <a class="footer_nav__link" href="/impressum">Impressum</a>
-            </li>
-            
-            <li class="footer_nav__item">
-              <a class="footer_nav__link" href="/datenschutz">Datenschutz</a>
-            </li>
-            
-            <!--<li class="footer_nav__item">
-              <a class="footer_nav__link" href="/#termin">Termin</a>
-            </li>-->
-            
-          </ul>
-  
-          <div id="copyright" class="copyright"><p> <script>document.getElementById("copyright").innerHTML = new Date().getFullYear() + " &copy; Anna Jakob";</script></p></div>
-  
         </div>
       </div>
     </div>

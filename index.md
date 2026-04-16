@@ -1,10 +1,11 @@
 ---
 layout: home
 header:
-  title: Physiotherapie - Graz
-  description: In meiner Tätigkeit als zertifizierte Schroth-Therapeutin in Graz liegt mein Schwerpunkt auf der ganzheitlichen Behandlung von Skoliose und anderen orthopädischen Erkrankungen. Dies betrifft sowohl Kinder als auch Erwachsene, bei denen ich mich speziell der Therapie und Stabilisierung der Wirbelsäule widme. <br/><br/>Sie können sich in Bezug auf andere Probleme im Bereich des Bewegungsapparat auf meine Expertise und Unterstützung verlassen. <br/><br/>Ich biete Hausbesuche an.
-  image: assets/images/Anna.jpg
-  image_webp: assets/images/Anna.webp
+  subtitle: Physiotherapie in Graz –
+  title: Ihr Spezialist für <br/>Skoliose & Wirbelsäulen-<br/>behandlung
+  description: Zertifizierte Schroth-Therapeutin für Kinder und Erwachsene – Ganzheitliche Unterstützung bei orthopädischen Erkrankungen. Ich biete Hausbesuche an.
+  image: assets/images/Titel-image.png
+  image_webp: assets/images/Titel-image.png
   image_alt: Bild über Anna Jakob
   #action: # action button is optional
     #label: 
@@ -24,8 +25,9 @@ sections:
 
   - type: services.html
     section_id: behandlungen
+    background_style: bg-light-a 
     #background_style: bg-info
-    title: Behandlungen
+    title: Behandlungsmethoden
     services:
       - title: Bewegungstherapie / Physiotherapie
         text: Eine Behandlungsmethode, die Bewegung und Übungen verwendet, um Schmerzen zu lindern, die Beweglichkeit zu verbessern und die körperliche Funktion wiederherzustellen. 

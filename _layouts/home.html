@@ -3,19 +3,22 @@ layout: base
 ---
 
 <header class="masthead">
-    <div class="container h-100">
+    <div class="container">
         
         <div class="parent">
-            <h1 class="div1">{{ page.header.title }}</h1>
-            <div class="div2">
-                <p class="avz awr axs">{{ page.header.description }}</p>
-                <div class="kw lx yz aai">
-                    {% if page.header.action %}
-                        <a href="{{ page.header.action.url }}" class="adu ajr arg arw awa awg bah bbn bis boy boz bpb bpk">{{ page.header.action.label }}</a>
-                    {% endif %}
+            <div class="div1">
+                <p class="div4">{{ page.header.subtitle }}</p>
+                <h1 class="div1">{{ page.header.title }}</h1>
+                <div class="div2">
+                    <p class="avz awr axs">{{ page.header.description }}</p>
+                    <div class="kw lx yz aai">
+                        {% if page.header.action %}
+                            <a href="{{ page.header.action.url }}" class="adu ajr arg arw awa awg bah bbn bis boy boz bpb bpk">{{ page.header.action.label }}</a>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
-            <picture class="div3"> 
+            <picture class="picture"> 
                 <source type="image/webp" srcset="{{ page.header.image_webp | relative_url }}"> 
                 <source type="image/jpeg" srcset="{{ page.header.image | relative_url }}"> 
                 <img src="{{ page.header.image | relative_url }}" alt="{{ page.header.image_alt }}" > 
