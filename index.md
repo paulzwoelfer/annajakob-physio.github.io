@@ -41,12 +41,13 @@ sections:
     background_style: bg-primary
     title: Ablauf der Physiotherapie
     text: > 
-      Vor Beginn Ihrer physiotherapeutischen Behandlung ist eine ärztliche Verordnung erforderlich. Diese erhalten Sie von Ihrem Arzt oder Ihrer Ärztin. Die Verordnung sollte neben Ihren persönlichen Angaben folgende Informationen enthalten:
+      Vor Beginn Ihrer physiotherapeutischen Behandlung ist eine ärztliche Verordnung erforderlich. Diese erhalten Sie von Ihrem Arzt oder Ihrer Ärztin.
     list:
       - Eine präzise medizinische Diagnose.
       - Die Anzahl der verordneten Therapiesitzungen.
       - Die Art der verschriebenen Behandlung (z.B. Physiotherapie für 45 Minuten).
-    text2: Sobald Sie die ärztliche Verordnung haben, können Sie sich für Ihre erste Therapiesitzung vorbereiten.<br/><br/>Ich freue mich darauf, Ihnen bei Ihrer Genesung zu helfen und stehen Ihnen gerne für alle Fragen zur Verfügung.
+    text2: Sobald Sie die Verordnung haben, können Sie Ihren ersten Termin buchen und mit der Therapie beginnen.
+    text3: „Ich freue mich darauf, Ihnen bei Ihrer Genesung zu helfen und stehe Ihnen gerne für alle Fragen zur Verfügung."
 
   #- type: services.html
   #  section_id: preis
@@ -94,8 +95,13 @@ sections:
     background_style: bg-primary
     title: Adresse
     text: Alle Termine finden an folgender Adresse statt<br/>
-    logo: assets/images/PraxisMiteinander.png
-    adresse: Pestalozzistraße 6, 8010 Graz
+    adressen:
+    - title: Praxis Miteinander
+      logo: assets/images/PraxisMiteinander.png
+      adresse: Pestalozzistraße 6, 8010 Graz
+    - title: Privatklinik der Kreuzschwestern
+      logo: assets/images/privatklinik-der-kreuzschwestern-graz-logo-web-02.png
+      adresse: Kreuzgasse 35, 8010 Graz
 
   #- type: opening.html
   #  section_id: oeffnungszeiten

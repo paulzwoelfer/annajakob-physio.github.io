@@ -49,3 +49,5 @@
 - Der Ablauf-Bereich wurde erneut an die Referenz angenähert: hellerer Türkisverlauf, sichtbare radiale Hintergrundkreise und überarbeitete Nummern-Badges für die Schritte.
 - Die Legacy-Dateien `assets/css/styles.css`, `_includes/actions.html`, `_includes/call-to-action.html`, `_includes/appointment.html`, `_includes/tiles.html`, `_sass/physio/_variables.scss` und `_sass/physio/_mixins.scss` wurden entfernt, weil sie vom aktuellen Theme nicht mehr verwendet werden.
 - Veraltete, auskommentierte Inhaltsblöcke in `index.md`, die auf entfernte Legacy-Komponenten verwiesen haben, wurden ebenfalls bereinigt. Der auskommentierte `opening.html`-Block bleibt wie gewünscht erhalten.
+- Die Procedure-Sektion wurde inhaltlich neu strukturiert: zuerst die Einleitung, dann ein eigener Block für die Pflichtangaben auf der Verordnung, danach der nächste Schritt zur Terminvorbereitung und abschließend die persönliche Abschlussaussage.
+- Die Service-SVGs für `Schroth-Therapie`, `Manuelle Therapie | Triggerpunkte und Fasciatechnik` und `Schröpfen` wurden erneut näher an die bereitgestellten Referenzformen angepasst.

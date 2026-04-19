@@ -69,6 +69,11 @@ main {
   display: block;
 }
 
+main section[id],
+.page-hero[id] {
+  scroll-margin-top: calc(var(--nav-height));
+}
+
 .container {
   width: min(calc(100% - 2rem), var(--max-width));
   margin: 0 auto;

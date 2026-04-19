@@ -5,31 +5,25 @@
       <h2 class="section-title" id="{{ section.section_id }}-heading">{{ section.title }}</h2>
       <div class="section-line section-line--left" aria-hidden="true"></div>
       <p class="procedure__text">{{ section.text }}</p>
-      <p class="procedure__text">Die Verordnung sollte neben Ihren persönlichen Angaben folgende Informationen enthalten:</p>
-      <div class="procedure__quote">
-        <p>Ich freue mich darauf, Ihnen bei Ihrer Genesung zu helfen und stehe Ihnen gerne für alle Fragen zur Verfügung.</p>
-      </div>
     </div>
 
-    <ol class="procedure__steps" aria-label="Schritte zur Therapie">
-      {% for item in section.list %}
-        <li class="fade-up">
-          <div class="procedure__step-num" aria-hidden="true">{{ forloop.index }}</div>
-          <p class="procedure__step-copy">
-            {% case forloop.index %}
-              {% when 1 %}<strong>Ärztliche Diagnose</strong>
-              {% when 2 %}<strong>Verordnung einholen</strong>
-              {% when 3 %}<strong>Behandlungsart</strong>
-              {% when 4 %}<strong>Termin vereinbaren</strong>
-            {% endcase %}
-            {{ item }}
-          </p>
-        </li>
-      {% endfor %}
-      <li class="fade-up">
-        <div class="procedure__step-num" aria-hidden="true">{{ section.list.size | plus: 1 }}</div>
-        <p class="procedure__step-copy"><strong>Start der Therapie</strong>{{ section.text2 | strip_html }}</p>
-      </li>
-    </ol>
+    <div class="procedure__requirements fade-up">
+      <h3>Die Verordnung sollte enthalten</h3>
+      <ol class="procedure__steps" aria-label="Erforderliche Angaben auf der Verordnung">
+        {% for item in section.list %}
+          <li>
+            <div class="procedure__step-num" aria-hidden="true">{{ forloop.index }}</div>
+            <p class="procedure__step-copy">{{ item }}</p>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <div class="procedure__outro fade-up">
+      <p class="procedure__text">{{ section.text2 }}</p>
+      <div class="procedure__quote">
+        <p>{{ section.text3 }}</p>
+      </div>
+    </div>
   </div>
 </section>
