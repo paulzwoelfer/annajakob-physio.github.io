@@ -68,22 +68,13 @@ sections:
   #    - title: Manuelle Therapie
   #      text: Preis 15 Minuten
   #      icon: bi-emoji-heart-eyes
-
-#  - type: appointment.html
-#    section_id: termin
-#    #background_style: bg-info
-#    title: Termin
-#    subtitle: Hier können Sie einen Termin buchen
-#    url: https://startbootstrap.com/
-
-
   - type: contact.html
     section_id: termin
     title: Termin
     text: >
       Um eine Terminbuchung für eine der oben aufgeführten Therapien unter dem Abschnitt 'Behandlungen' bei mir vorzunehmen, haben Sie verschiedene Möglichkeiten zur Auswahl. Sie können dies über die folgenden Kanäle tun:
     actions:
-    - title: Online
+    - title: Jetzt Termin buchen
       icon: calendar-outline
       self: true
       url: /termin
@@ -119,5 +110,4 @@ sections:
     #  zeit: 14:00 bis 18:00
     #- tag: Donnerstag
     #  zeit: 14:00 bis 18:00
-
 ---

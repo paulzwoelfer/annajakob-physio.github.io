@@ -33,7 +33,7 @@
   - `_sass/physio/_404.scss`
 - Die SCSS-Importstruktur in `_sass/physio/_all.scss` wurde erweitert, damit die neue Partialisierung vollständig eingebunden ist.
 - Die Menüstruktur in `_data/menus.yml` wurde angepasst, damit die Startnavigation zur neuen Hero-Sektion passt.
-- Die Umsetzung wurde per `bundle exec jekyll build` erfolgreich gebaut.
+- Die Umsetzung wurde in dieser Phase ohne zusätzliche Test- oder Build-Ausführung weitergeführt, wie gewünscht.
 - Der Hero wurde näher an die Referenz gebracht: Icon im Eyebrow-Badge, korrekt gestalteter Zertifizierungs-Tag auf dem Bild, zusätzliche Trennlinie im Headerbereich, stärker gerundetes Hero-Bild und zentrierte Mobile-Darstellung.
 - Die mobile Navigation zeigt den Brand-Text jetzt auch auf kleinen Screens weiterhin an, statt ihn auszublenden.
 - Der Ablauf-Bereich wurde visuell überarbeitet, damit Farben, Typografie, Kartenstil und Hintergrund näher am gelieferten Design liegen.
@@ -47,4 +47,5 @@
 - Die große Online-Termin-Karte wurde visuell an die kleineren Termin-Karten angenähert; nur Größe und CTA unterscheiden sich jetzt stärker.
 - Die Termin-Links innerhalb der Karten wurden als eigene, klar abgegrenzte Interaktionselemente gestaltet, statt die gesamte Karte als primären Link wirken zu lassen.
 - Der Ablauf-Bereich wurde erneut an die Referenz angenähert: hellerer Türkisverlauf, sichtbare radiale Hintergrundkreise und überarbeitete Nummern-Badges für die Schritte.
-- `assets/css/styles.css` ist für die aktuell aktiven Templates nicht mehr erforderlich, wird aber derzeit noch als Legacy-Datei im Repository belassen, weil ältere/auskommentierte Theme-Bausteine noch Bootstrap-orientierte Klassen verwenden.
+- Die Legacy-Dateien `assets/css/styles.css`, `_includes/actions.html`, `_includes/call-to-action.html`, `_includes/appointment.html`, `_includes/tiles.html`, `_sass/physio/_variables.scss` und `_sass/physio/_mixins.scss` wurden entfernt, weil sie vom aktuellen Theme nicht mehr verwendet werden.
+- Veraltete, auskommentierte Inhaltsblöcke in `index.md`, die auf entfernte Legacy-Komponenten verwiesen haben, wurden ebenfalls bereinigt. Der auskommentierte `opening.html`-Block bleibt wie gewünscht erhalten.
