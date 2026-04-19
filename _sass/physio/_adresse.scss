@@ -1,11 +1,63 @@
-#adresse {
+.section--address {
+  background: linear-gradient(180deg, #ffffff 0%, #f4fbfc 100%);
+}
 
-    .logo {
-        max-width: 100%;
+.address {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
+  gap: 2rem;
+  align-items: center;
+}
 
-        @include tablet {
-            width: 50%;
-            margin: auto;
-        }
-    }
+.address__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+
+  address {
+    display: grid;
+    gap: 0.2rem;
+    margin: 0;
+    font-style: normal;
+    color: var(--text-muted);
+  }
+
+  strong {
+    color: var(--text);
+  }
+}
+
+.address__map,
+.address__image-wrap {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+}
+
+.address__map {
+  iframe {
+    display: block;
+    width: 100%;
+    min-height: 22rem;
+    border: 0;
+  }
+}
+
+.address__image-wrap {
+  padding: 1rem;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 900px) {
+  .address {
+    grid-template-columns: 1fr;
+  }
 }

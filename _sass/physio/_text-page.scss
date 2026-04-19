@@ -1,12 +1,38 @@
+.content-card,
 .text-page {
-    margin: 0 auto;
-    max-width: 600px;
+  max-width: 100%;
 
-    a {
-        text-decoration: underline;
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 1.75rem 0 0.75rem;
+    color: var(--text);
+    line-height: 1.2;
+  }
 
-        &:hover {
-            color: $secondary;
-        }
-    }
+  p,
+  ul,
+  ol,
+  div {
+    max-width: 50rem;
+  }
+
+  p,
+  ul,
+  ol {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  ul,
+  ol {
+    padding-left: 1.2rem;
+  }
+
+  a {
+    color: var(--brand-dark);
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+  }
 }

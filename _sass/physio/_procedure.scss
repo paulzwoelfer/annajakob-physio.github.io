@@ -1,63 +1,85 @@
-.list {
-    list-style-position: inside;
+.section--procedure {
+  background: linear-gradient(180deg, #0f7f93 0%, #0d6d7d 100%);
+  color: #fff;
 
-    li { 
-        display: flex;
-        justify-content: center;
+  .section-eyebrow {
+    background: rgba(255, 255, 255, 0.14);
+    color: #fff;
+  }
 
-        &::before { 
-            content: '• '; 
-        } 
-    } 
+  .section-line {
+    background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0.24) 100%);
+  }
 }
 
 .procedure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-
-    .continater {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    h2 {
-        color: $text;
-    }
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
 }
 
-/* Style for the centered section */
-.centered-section {
-    max-width: 600px; /* Adjust the maximum width as needed */
-    padding: 20px;
+.procedure__quote,
+.procedure__steps li {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 14px 34px rgba(4, 41, 49, 0.16);
 }
 
+.procedure__quote {
+  margin-top: 1.75rem;
+  padding: 1.35rem;
+  border-radius: 1.5rem;
 
-/* Style for the description */
-.description {
-    font-size: 1rem;
-    margin-top: 10px;
-    color: $text;
+  p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.02rem;
+  }
 }
 
-/* Style for the bullet points */
-ul {
-    list-style-type: disc; /* Use bullets for list items */
-    text-align: left; /* Left-align the list items */
-    margin-left: 20px; /* Add some margin for indentation */
+.procedure__steps {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: start;
+    padding: 1.2rem;
+    border-radius: 1.5rem;
+  }
+
+  p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.88);
+  }
+
+  strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #fff;
+  }
 }
 
-/* Style for list items */
-li {
-    margin-bottom: 5px; /* Add spacing between list items */
+.procedure__step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--brand-dark);
+  font-weight: 800;
 }
 
-/* Mobile styles (No changes from the previous example) */
-@media screen and (max-width: 768px) {
-    .centered-section {
-        max-width: 100%; /* Adjust for mobile screens */
-        padding: 10px; /* Adjust padding for mobile screens */
-    }
+@media (max-width: 900px) {
+  .procedure {
+    grid-template-columns: 1fr;
+  }
 }

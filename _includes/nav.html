@@ -1,26 +1,28 @@
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-        <div class="logo-container">
-            <a class="logo" href="/#page-top">
-                <img src="{{ site.logo | relative_url }} " alt="Logo">
-            </a>
-            <div class="title-container">
-                <span class="title">{{ site.name }}</span>
-                <br/> 
-                <span class="subtitle">{{ site.subtitle }}</span> 
-            </div>
-        </div>
-       
+<nav id="mainNav" class="site-nav" role="navigation" aria-label="Hauptnavigation">
+  <div class="site-nav__inner container">
+    <a class="site-nav__brand" href="{{ '/#hero' | relative_url }}" aria-label="Anna Jakob Physiotherapie - zur Startseite">
+      <img src="{{ site.logo | relative_url }}" alt="Logo Physiotherapie Anna Jakob" />
+      <div class="site-nav__brand-text">
+        <span class="site-nav__name">{{ site.name }}</span>
+        <span class="site-nav__title">{{ site.subtitle }}</span>
+      </div>
+    </a>
 
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                {% for item in site.data.menus.header  %}
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
+    <button class="site-nav__toggle" id="navToggle" type="button" aria-controls="navLinks" aria-expanded="false" aria-label="Menü öffnen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="site-nav__links" id="navLinks" role="list">
+      {% for item in site.data.menus.header %}
+        <li>
+          <a href="{{ item.url | relative_url }}" class="{% if item.highlight %}is-highlight{% endif %}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+      <li>
+        <a href="{{ '/#termin' | relative_url }}" class="is-button">Jetzt buchen</a>
+      </li>
+    </ul>
+  </div>
 </nav>

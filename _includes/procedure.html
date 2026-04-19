@@ -1,20 +1,35 @@
-<section id="{{ section.section_id }}" class="page-section {{ section.background_style }} procedure">
-    <div class="container px-4 px-lg-5 centered-section">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="{{ section.text_style | default: 'text-center' }}">
-          <h2 class="mt-0 text-center">{{ section.title }}</h2>
-          <hr class="divider">
-        </div>
+<section id="{{ section.section_id }}" class="section section--procedure" aria-labelledby="{{ section.section_id }}-heading">
+  <div class="container procedure">
+    <div class="procedure__intro">
+      <span class="section-eyebrow">Wie es funktioniert</span>
+      <h2 class="section-title" id="{{ section.section_id }}-heading">{{ section.title }}</h2>
+      <div class="section-line section-line--left" aria-hidden="true"></div>
+      <p class="procedure__text">{{ section.text }}</p>
+      <p class="procedure__text">Die Verordnung sollte neben Ihren persönlichen Angaben folgende Informationen enthalten:</p>
+      <div class="procedure__quote">
+        <p>Ich freue mich darauf, Ihnen bei Ihrer Genesung zu helfen und stehe Ihnen gerne für alle Fragen zur Verfügung.</p>
       </div>
-      <div class="description">
-        <p>{{ section.text | markdownify }}</p>
-        <ul>
-          {% for procedure in section.list %}
-          <li>{{ procedure | markdownify }}</li>
-        {% endfor %}
-        </ul>
-        <p>{{ section.text2 | markdownify }}</p>
-      </div>
-      {% include actions.html actions=section.actions %}
     </div>
-  </section>
+
+    <ol class="procedure__steps" aria-label="Schritte zur Therapie">
+      {% for item in section.list %}
+        <li class="fade-up">
+          <div class="procedure__step-num" aria-hidden="true">{{ forloop.index }}</div>
+          <p>
+            {% case forloop.index %}
+              {% when 1 %}<strong>Ärztliche Diagnose</strong>
+              {% when 2 %}<strong>Verordnung einholen</strong>
+              {% when 3 %}<strong>Behandlungsart</strong>
+              {% when 4 %}<strong>Termin vereinbaren</strong>
+            {% endcase %}
+            {{ item }}
+          </p>
+        </li>
+      {% endfor %}
+      <li class="fade-up">
+        <div class="procedure__step-num" aria-hidden="true">{{ section.list.size | plus: 1 }}</div>
+        <p><strong>Start der Therapie</strong>{{ section.text2 | strip_html }}</p>
+      </li>
+    </ol>
+  </div>
+</section>

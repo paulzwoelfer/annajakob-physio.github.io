@@ -2,45 +2,44 @@
 layout: base
 ---
 
-<header class="masthead">
-    <div class="container h-100">
-        
-        <div class="parent">
-            <h1 class="div1">{{ page.header.title }}</h1>
-            <div class="div2">
-                <p class="avz awr axs">{{ page.header.description }}</p>
-                <div class="kw lx yz aai">
-                    {% if page.header.action %}
-                        <a href="{{ page.header.action.url }}" class="adu ajr arg arw awa awg bah bbn bis boy boz bpb bpk">{{ page.header.action.label }}</a>
-                    {% endif %}
-                </div>
-            </div>
-            <picture class="div3"> 
-                <source type="image/webp" srcset="{{ page.header.image_webp | relative_url }}"> 
-                <source type="image/jpeg" srcset="{{ page.header.image | relative_url }}"> 
-                <img src="{{ page.header.image | relative_url }}" alt="{{ page.header.image_alt }}" > 
-            </picture>
-            <!--<img src="{{ page.header.image | relative_url }}" alt="{{ page.header.image_alt }}" class="div3">-->
+<main id="main-content">
+  <section id="hero" class="hero" aria-labelledby="hero-heading">
+    <div class="hero__inner container">
+      <div class="hero__content">
+        <div class="hero__eyebrow">
+          <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm0 3.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm0 9.5c-2 0-4-1-4-2.5v-.5c0-1.1.9-2 2-2h4c1.1 0 2 .9 2 2v.5C14 14 12 15 10 15z"></path></svg>
+          Physiotherapie in Graz
         </div>
-
-            <!--<div class="gx tv ctg cva cxm cyr czv dag dkg dkn dla">
-                <h1 class="tv avt awd awx axv chz crw dhh">{{ page.header.title }}</h1>
-                <div class="lk uk cui dhu dhw">
-                    <p class="avz awr axs">{{ page.header.description }}</p>
-                    <div class="kw lx yz aai">
-                        {% if page.header.action %}
-                            <a href="{{ page.header.action.url }}" class="adu ajr arg arw awa awg bah bbn bis boy boz bpb bpk">{{ page.header.action.label }}</a>
-                        {% endif %}
-                    </div>
-                </div>
-                <img src="{{ page.header.image | relative_url }}" alt="" class="kw mw tn uc adq aqe bxa cui cxm dhv dhy diu">
-            </div>-->
-        
+        <h1 class="hero__title" id="hero-heading">
+          Ganzheitliche Therapie
+          <br />
+          für <span>Ihre Gesundheit</span>
+        </h1>
+        <div class="hero__description">
+          <p>{{ page.header.description }}</p>
+        </div>
+        <div class="hero__actions">
+          <a href="#termin" class="button button--primary">Termin buchen</a>
+          <a href="#behandlungen" class="button button--secondary">Behandlungen ansehen</a>
+        </div>
+      </div>
+      <div class="hero__image-wrap">
+        <picture class="hero__image">
+          <source type="image/webp" srcset="{{ page.header.image_webp | relative_url }}" />
+          <source type="image/jpeg" srcset="{{ page.header.image | relative_url }}" />
+          <img src="{{ page.header.image | relative_url }}" alt="{{ page.header.image_alt }}" loading="eager" />
+        </picture>
+        <div class="hero__tag">
+          <svg viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          Schroth-Therapeutin
+        </div>
+      </div>
     </div>
-</header>
+  </section>
 
-{% for section in page.sections %}
+  {% for section in page.sections %}
     {% include {{ section.type }} section=section site=site page=page %}
-{% endfor %}
+  {% endfor %}
 
-{{ content }}
+  {{ content }}
+</main>

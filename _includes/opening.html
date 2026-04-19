@@ -1,18 +1,17 @@
-<section id="{{ section.section_id }}" class="page-section {{ section.background_style }}">
-    <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-8 col-xl-6 center-text">
-          <h2 class="mt-0">{{ section.title }}</h2>
-          <hr class="divider"/>
-        </div>
-      </div>
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-8 col-xl-6 center-text">
-          <p>{{ section.text }}</p>
-            {% for tage in section.tage %}
-                <p>{{ tage.tag }}: {{ tage.zeit }}</p>
-            {% endfor %}
-        </div>
-      </div>
+<section id="{{ section.section_id }}" class="section section--opening" aria-labelledby="{{ section.section_id }}-heading">
+  <div class="container">
+    <div class="opening-card fade-up">
+      <span class="section-eyebrow">Erreichbarkeit</span>
+      <h2 class="section-title" id="{{ section.section_id }}-heading">{{ section.title }}</h2>
+      <div class="section-line" aria-hidden="true"></div>
+      <p>{{ section.text }}</p>
+      {% if section.tage %}
+        <ul class="opening-card__times" role="list">
+          {% for tage in section.tage %}
+            <li><strong>{{ tage.tag }}</strong><span>{{ tage.zeit }}</span></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </div>
-  </section>
+  </div>
+</section>

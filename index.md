@@ -115,10 +115,10 @@ sections:
     logo: assets/images/PraxisMiteinander.png
     adresse: Pestalozzistraße 6, 8010 Graz
 
-  - type: opening.html
-    section_id: oeffnungszeiten
-    title: Öffnungszeiten
-    text: Nach Vereinbarung, oder <a href="/termin">online buchbar</a>
+  #- type: opening.html
+  #  section_id: oeffnungszeiten
+  #  title: Öffnungszeiten
+  #  text: Nach Vereinbarung, oder <a href="/termin">online buchbar</a>
     #tage:
     #- tag: Montag
     #  zeit: 08:00 bis 15:00

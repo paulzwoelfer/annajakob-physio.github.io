@@ -1,71 +1,33 @@
-
-<div class="top is-active" title="Top">
-  <a class="center" href="#page-top" aria-label="Scroll to the top"><ion-icon name="chevron-up-outline"></ion-icon></a>
-</div>
-
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col col-12">
-        
-          <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 col-xl-6 center-text">
-              <img class="logo mb-2" src="{{ 'assets/images/PraxisMiteinander.png' | relative_url }} " alt="Praxis Miteinander"><br/>
-              <p class="mb-5">{{ site.adresse }}, {{ site.city }}</p>
-            </div>
-          </div>
-
-          <div class="social">
-              <ul class="social__list list-reset">
-              
-                  <li class="social__item">
-                      <a aria-label="icon" class="social__link" href="mailto:{{ site.email }}" rel="noopener" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
-                  </li>
-
-                  <li class="social__item">
-                      <a aria-label="icon" class="social__link" href="tel:{{site.phone}}" rel="noopener" target="_blank"><ion-icon name="call-outline"></ion-icon></a>
-                  </li>
-
-                  <li class="social__item">
-                      <a aria-label="icon" class="social__link" href="{{site.instagram_url}}" rel="noopener" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                  </li>
-                  
-                  <!-- <li class="social__item">
-                      <a aria-label="icon" class="social__link" href="https://facebook.com" rel="noopener" target="_blank"><ion-icon name="logo-facebook"></ion-icon></i></a>
-                  </li> -->
-              
-              </ul>
-          </div>
-  
-  
-          <ul class="footer_nav list-reset">
-            
-            <!--<li class="footer_nav__item">
-              <a class="footer_nav__link" href="/">Home</a>
-            </li>-->
-            
-            <li class="footer_nav__item">
-              <a class="footer_nav__link" href="/impressum">Impressum</a>
-            </li>
-            
-            <li class="footer_nav__item">
-              <a class="footer_nav__link" href="/datenschutz">Datenschutz</a>
-            </li>
-            
-            <!--<li class="footer_nav__item">
-              <a class="footer_nav__link" href="/#termin">Termin</a>
-            </li>-->
-            
-          </ul>
-  
-          <div id="copyright" class="copyright"><p> <script>document.getElementById("copyright").innerHTML = new Date().getFullYear() + " &copy; Anna Jakob";</script></p></div>
-  
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <img src="{{ site.logo | relative_url }}" alt="Logo Physiotherapie Anna Jakob" />
+        <div>
+          <div class="site-footer__name">{{ site.name }}</div>
+          <div class="site-footer__title">{{ site.subtitle }} · Graz</div>
         </div>
       </div>
+
+      <nav aria-label="Footer-Navigation">
+        <ul class="site-footer__nav" role="list">
+          <li><a href="{{ '/#behandlungen' | relative_url }}">Behandlungen</a></li>
+          <li><a href="{{ '/#procedure' | relative_url }}">Ablauf</a></li>
+          <li><a href="{{ '/#termin' | relative_url }}">Termin</a></li>
+          <li><a href="{{ '/#adresse' | relative_url }}">Adresse</a></li>
+          <li><a href="{{ '/impressum' | relative_url }}">Impressum</a></li>
+          <li><a href="{{ '/datenschutz' | relative_url }}">Datenschutz</a></li>
+        </ul>
+      </nav>
     </div>
-  </footer>
 
-</div>
-
-
+    <div class="site-footer__bottom">
+      <div class="site-footer__contact">
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <a href="tel:{{ site.phone }}">{{ site.phone }}</a>
+        <a href="{{ site.instagram_url }}" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <p>© <span id="footerYear"></span> {{ site.name }} - Physiotherapie Graz. Alle Rechte vorbehalten.</p>
+    </div>
+  </div>
+</footer>

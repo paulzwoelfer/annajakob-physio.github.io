@@ -1,6 +1,12 @@
+.error-page {
+  min-height: 45vh;
 
-.error_page {
-    h1 {
-        padding: 120px 0;
-    }
+.container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .page-hero__content {
+    text-align: center;
+  }
 }

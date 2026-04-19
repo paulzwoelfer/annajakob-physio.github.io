@@ -1,17 +1,33 @@
-<section id="{{ section.section_id }}" class="page-section {{ section.background_style }}">
-    <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-8 col-xl-6 center-text">
-          <h2 class="mt-0">{{ section.title }}</h2>
-          <hr class="divider"/>
-          <p class="mb-3">{{ section.text }}</p>
-        </div>
+<section id="{{ section.section_id }}" class="section section--address" aria-labelledby="{{ section.section_id }}-heading">
+  <div class="container address">
+    <div class="address__content">
+      <span class="section-eyebrow">Standort</span>
+      <h2 class="section-title" id="{{ section.section_id }}-heading">{{ section.title }}</h2>
+      <div class="section-line section-line--left" aria-hidden="true"></div>
+      <p class="address__intro">{{ section.text | strip_html }}</p>
+
+      <div class="address__info">
+        <address>
+          <strong>{{ site.praxis_name }}</strong>
+          <span>{{ section.adresse }}</span>
+        </address>
+        <a href="https://maps.google.com/?q={{ section.adresse | uri_escape }}" target="_blank" rel="noopener" class="button button--primary">Route planen</a>
       </div>
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-8 col-xl-6 center-text">
-          <img class="logo mb-2" src="{{ section.logo | relative_url }} " alt="Praxis Miteinander"><br/>
-          <p class="">{{ section.adresse }}</p>
-        </div>
+
+      <div class="address__map">
+        <iframe
+          src="https://www.google.com/maps?q={{ section.adresse | uri_escape }}&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Karte: {{ site.praxis_name }}, {{ section.adresse }}"
+        ></iframe>
       </div>
     </div>
-  </section>
+
+    <div class="address__media">
+      <div class="address__image-wrap">
+        <img src="{{ section.logo | relative_url }}" alt="{{ site.praxis_name }} - {{ section.adresse }}" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
