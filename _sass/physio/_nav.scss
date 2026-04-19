@@ -158,7 +158,27 @@
 }
 
 @media (max-width: 560px) {
+  .site-nav__inner {
+    gap: 0.5rem;
+  }
+
+  .site-nav__brand {
+    gap: 0.65rem;
+
+    img {
+      height: 2.65rem;
+    }
+  }
+
   .site-nav__brand-text {
-    display: none;
+    min-width: 0;
+  }
+
+  .site-nav__name {
+    font-size: 0.92rem;
+  }
+
+  .site-nav__title {
+    font-size: 0.72rem;
   }
 }

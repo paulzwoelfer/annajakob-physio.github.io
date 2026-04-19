@@ -15,7 +15,7 @@
       {% for item in section.list %}
         <li class="fade-up">
           <div class="procedure__step-num" aria-hidden="true">{{ forloop.index }}</div>
-          <p>
+          <p class="procedure__step-copy">
             {% case forloop.index %}
               {% when 1 %}<strong>Ärztliche Diagnose</strong>
               {% when 2 %}<strong>Verordnung einholen</strong>
@@ -28,7 +28,7 @@
       {% endfor %}
       <li class="fade-up">
         <div class="procedure__step-num" aria-hidden="true">{{ section.list.size | plus: 1 }}</div>
-        <p><strong>Start der Therapie</strong>{{ section.text2 | strip_html }}</p>
+        <p class="procedure__step-copy"><strong>Start der Therapie</strong>{{ section.text2 | strip_html }}</p>
       </li>
     </ol>
   </div>

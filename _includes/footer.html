@@ -1,20 +1,16 @@
 <footer class="site-footer" role="contentinfo">
   <div class="container">
     <div class="site-footer__top">
-      <div class="site-footer__brand">
+      <a class="site-footer__brand" href="{{ '/#hero' | relative_url }}" aria-label="Zur Startseite von Anna Jakob Physiotherapie">
         <img src="{{ site.logo | relative_url }}" alt="Logo Physiotherapie Anna Jakob" />
         <div>
           <div class="site-footer__name">{{ site.name }}</div>
-          <div class="site-footer__title">{{ site.subtitle }} · Graz</div>
+          <div class="site-footer__title">{{ site.subtitle }} <span aria-hidden="true">·</span> Graz</div>
         </div>
-      </div>
+      </a>
 
       <nav aria-label="Footer-Navigation">
         <ul class="site-footer__nav" role="list">
-          <li><a href="{{ '/#behandlungen' | relative_url }}">Behandlungen</a></li>
-          <li><a href="{{ '/#procedure' | relative_url }}">Ablauf</a></li>
-          <li><a href="{{ '/#termin' | relative_url }}">Termin</a></li>
-          <li><a href="{{ '/#adresse' | relative_url }}">Adresse</a></li>
           <li><a href="{{ '/impressum' | relative_url }}">Impressum</a></li>
           <li><a href="{{ '/datenschutz' | relative_url }}">Datenschutz</a></li>
         </ul>
@@ -22,12 +18,7 @@
     </div>
 
     <div class="site-footer__bottom">
-      <div class="site-footer__contact">
-        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-        <a href="tel:{{ site.phone }}">{{ site.phone }}</a>
-        <a href="{{ site.instagram_url }}" target="_blank" rel="noopener">Instagram</a>
-      </div>
-      <p>© <span id="footerYear"></span> {{ site.name }} - Physiotherapie Graz. Alle Rechte vorbehalten.</p>
+      <p>© <span id="footerYear"></span> {{ site.name }} <span aria-hidden="true">- </span>Physiotherapie Graz. Alle Rechte vorbehalten.</p>
     </div>
   </div>
 </footer>

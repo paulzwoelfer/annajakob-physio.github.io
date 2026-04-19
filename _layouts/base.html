@@ -16,7 +16,7 @@
     <link rel="manifest" href="{{ '/assets/images/site.webmanifest' | relative_url }}" />
     <meta name="theme-color" content="#ffffff" />
   </head>
-  <body id="page-top" class="site-shell {% if page.layout == site.landing_template %}landing{% endif %}">
+  <body id="page-top" class="site-shell {% if page.layout == site.landing_template %}landing{% endif %} page-slug-{{ page.permalink | default: page.title | default: 'default' | slugify }}">
     <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
     {% include nav.html site=site page=page %}
     {{ content }}

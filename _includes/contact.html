@@ -12,10 +12,15 @@
 
     <div class="contact-grid">
       {% if online_action %}
-        <div class="booking-panel">
-          <h3>Online Termin buchen</h3>
+        <div class="booking-panel fade-up">
+          <div class="contact-card__header">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-width="2" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            </div>
+            <h3>Online Termin buchen</h3>
+          </div>
           <p>Buchen Sie Ihren Termin bequem und schnell über das Online-Buchungssystem, rund um die Uhr verfügbar.</p>
-          <a href="{{ online_action.url }}" class="button button--primary">Jetzt Termin buchen</a>
+          <a href="{{ online_action.url }}" class="contact-card__link contact-card__link--button">Jetzt Termin buchen</a>
         </div>
       {% endif %}
 
@@ -48,7 +53,7 @@
                 {% else %}Wenn Sie lieber über Social Media Kontakt aufnehmen, können Sie mir auch auf Instagram schreiben.
               {% endcase %}
             </p>
-            <a href="{{ action.url }}" class="contact-card__link" {% unless action.self %}target="_blank" rel="noopener"{% endunless %}>{{ action.title }}</a>
+            <a href="{{ action.url }}" class="contact-card__link" {% unless action.self %}target="_blank" rel="noopener noreferrer"{% endunless %}>{{ action.title }}</a>
           </article>
         {% endfor %}
       </div>

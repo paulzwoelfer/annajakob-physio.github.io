@@ -12,7 +12,7 @@
 .contact-card {
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.94);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(244, 251, 252, 0.98) 100%);
   box-shadow: var(--shadow-sm);
 }
 
@@ -22,12 +22,7 @@
   justify-content: center;
   min-height: 100%;
   padding: 2rem;
-  background: linear-gradient(135deg, rgba(230, 247, 250, 0.95) 0%, rgba(255, 255, 255, 0.98) 100%);
-
-  h3 {
-    margin: 0 0 0.75rem;
-    font-size: 1.55rem;
-  }
+  grid-row: span 2;
 
   p {
     margin: 0 0 1.5rem;
@@ -55,6 +50,10 @@
     margin: 0 0 1rem;
     color: var(--text-muted);
   }
+
+  &:focus-within {
+    box-shadow: var(--shadow-md);
+  }
 }
 
 .contact-card__header {
@@ -67,6 +66,10 @@
     margin: 0;
     font-size: 1.15rem;
   }
+}
+
+.booking-panel .contact-card__header h3 {
+  font-size: 1.35rem;
 }
 
 .contact-card__icon {
@@ -86,12 +89,51 @@
 }
 
 .contact-card__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 2.85rem;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 127, 147, 0.18);
+  background: rgba(255, 255, 255, 0.92);
   color: var(--brand-dark);
   font-weight: 700;
+  text-underline-offset: 0.2rem;
+  transition:
+    background var(--transition),
+    border-color var(--transition),
+    color var(--transition),
+    transform var(--transition);
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-1px);
+    border-color: rgba(15, 127, 147, 0.34);
+    background: var(--brand-light);
+  }
+}
+
+.contact-card__link--button {
+  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(22, 171, 194, 0.22);
+
+  &:hover,
+  &:focus-visible {
+    background: linear-gradient(135deg, var(--brand-dark) 0%, #0b6575 100%);
+    color: #fff;
+  }
 }
 
 @media (max-width: 900px) {
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .booking-panel {
+    grid-row: auto;
   }
 }

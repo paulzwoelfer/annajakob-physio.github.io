@@ -34,3 +34,17 @@
 - Die SCSS-Importstruktur in `_sass/physio/_all.scss` wurde erweitert, damit die neue Partialisierung vollständig eingebunden ist.
 - Die Menüstruktur in `_data/menus.yml` wurde angepasst, damit die Startnavigation zur neuen Hero-Sektion passt.
 - Die Umsetzung wurde per `bundle exec jekyll build` erfolgreich gebaut.
+- Der Hero wurde näher an die Referenz gebracht: Icon im Eyebrow-Badge, korrekt gestalteter Zertifizierungs-Tag auf dem Bild, zusätzliche Trennlinie im Headerbereich, stärker gerundetes Hero-Bild und zentrierte Mobile-Darstellung.
+- Die mobile Navigation zeigt den Brand-Text jetzt auch auf kleinen Screens weiterhin an, statt ihn auszublenden.
+- Der Ablauf-Bereich wurde visuell überarbeitet, damit Farben, Typografie, Kartenstil und Hintergrund näher am gelieferten Design liegen.
+- Die Termin-Karten wurden näher an das Referenzdesign angepasst, inklusive prominenterem Online-Buchungsblock und konsistenterer Kartenoptik.
+- Der Adressblock verwendet jetzt eine strukturierte `address`-Darstellung mit Icon, Textblock und besserem Mobile-Verhalten.
+- Der Footer wurde barriereärmer umgesetzt: klickbare Brand-Zone, explizitere Link-Labels, normale Logo-Darstellung und sauberere semantische Struktur.
+- Für Inhaltsseiten wurde der Seiten-Header ergänzt und die `/termin`-Seite gezielt entschärft, damit der Header über dem eingebetteten Buchungssystem ruhiger und passender wirkt.
+- Globale Fokuszustände und mehrere ARIA-Verbesserungen wurden ergänzt, um Tastaturbedienung und allgemeine Zugänglichkeit zu verbessern.
+- Kleinere Aufräumarbeiten wurden durchgeführt, unter anderem das Entfernen nicht mehr genutzter Header-/Nav-Reste aus der letzten Umstellung.
+- Der Footer-Hintergrund wurde auf eine hellere, logo-kompatible Fläche umgestellt, damit das bestehende Logo ohne weiße Invertierung oder Kontrastprobleme sauber funktioniert.
+- Die große Online-Termin-Karte wurde visuell an die kleineren Termin-Karten angenähert; nur Größe und CTA unterscheiden sich jetzt stärker.
+- Die Termin-Links innerhalb der Karten wurden als eigene, klar abgegrenzte Interaktionselemente gestaltet, statt die gesamte Karte als primären Link wirken zu lassen.
+- Der Ablauf-Bereich wurde erneut an die Referenz angenähert: hellerer Türkisverlauf, sichtbare radiale Hintergrundkreise und überarbeitete Nummern-Badges für die Schritte.
+- `assets/css/styles.css` ist für die aktuell aktiven Templates nicht mehr erforderlich, wird aber derzeit noch als Legacy-Datei im Repository belassen, weil ältere/auskommentierte Theme-Bausteine noch Bootstrap-orientierte Klassen verwenden.

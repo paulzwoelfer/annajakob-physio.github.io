@@ -44,6 +44,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+svg {
+  stroke: currentColor;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -131,6 +135,13 @@ main {
   &:focus-visible {
     background: var(--brand-light);
   }
+}
+
+a:focus-visible,
+button:focus-visible,
+iframe:focus-visible {
+  outline: 3px solid rgba(15, 127, 147, 0.45);
+  outline-offset: 3px;
 }
 
 .section {
@@ -224,4 +235,25 @@ main {
   .container {
     width: min(calc(100% - 1.5rem), var(--max-width));
   }
+
+  .section-header {
+    text-align: center;
+  }
+}
+
+.page-slug-termin .page-hero {
+  padding-bottom: 1.25rem;
+}
+
+.page-slug-termin .page-hero__content {
+  max-width: 28rem;
+}
+
+.page-slug-termin .content-section {
+  padding-top: 0;
+}
+
+.page-slug-termin .content-card {
+  padding: 0;
+  overflow: hidden;
 }

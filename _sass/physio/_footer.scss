@@ -1,8 +1,8 @@
 .site-footer {
   margin-top: 5rem;
   padding: 2.5rem 0;
-  background: var(--surface-dark);
-  color: rgba(255, 255, 255, 0.84);
+  background: linear-gradient(180deg, #dff3f6 0%, #edf9fb 100%);
+  color: var(--text);
 }
 
 .site-footer__top,
@@ -15,13 +15,14 @@
 
 .site-footer__top {
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(15, 127, 147, 0.12);
 }
 
 .site-footer__brand {
   display: flex;
   align-items: center;
   gap: 1rem;
+  text-decoration: none;
 
   img {
     height: 2.9rem;
@@ -31,11 +32,11 @@
 
 .site-footer__name {
   font-weight: 700;
-  color: #fff;
+  color: var(--text);
 }
 
 .site-footer__title {
-  color: rgba(255, 255, 255, 0.58);
+  color: var(--text-muted);
   font-size: 0.88rem;
 }
 
@@ -51,7 +52,7 @@
 
 .site-footer__nav a,
 .site-footer__contact a {
-  color: rgba(255, 255, 255, 0.76);
+  color: var(--text-muted);
 
   &:hover,
   &:focus-visible {

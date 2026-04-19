@@ -16,9 +16,7 @@
 
     <ul class="site-nav__links" id="navLinks" role="list">
       {% for item in site.data.menus.header %}
-        <li>
-          <a href="{{ item.url | relative_url }}" class="{% if item.highlight %}is-highlight{% endif %}">{{ item.title }}</a>
-        </li>
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
       {% endfor %}
       <li>
         <a href="{{ '/#termin' | relative_url }}" class="is-button">Jetzt buchen</a>

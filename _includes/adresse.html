@@ -7,11 +7,14 @@
       <p class="address__intro">{{ section.text | strip_html }}</p>
 
       <div class="address__info">
-        <address>
-          <strong>{{ site.praxis_name }}</strong>
-          <span>{{ section.adresse }}</span>
+        <address class="address__block">
+          <svg viewBox="0 0 24 24" stroke-width="2" fill="none" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          <p>
+            <strong>{{ site.praxis_name }}</strong>
+            <span>{{ section.adresse }}</span>
+          </p>
         </address>
-        <a href="https://maps.google.com/?q={{ section.adresse | uri_escape }}" target="_blank" rel="noopener" class="button button--primary">Route planen</a>
+        <a href="https://maps.google.com/?q={{ section.adresse | uri_escape }}" target="_blank" rel="noopener noreferrer" class="button button--primary" aria-label="Route in Google Maps planen">Route planen</a>
       </div>
 
       <div class="address__map">
