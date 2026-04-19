@@ -39,8 +39,7 @@
   font-size: 0.88rem;
 }
 
-.site-footer__nav,
-.site-footer__contact {
+.site-footer__nav {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem 1.25rem;
@@ -49,8 +48,7 @@
   list-style: none;
 }
 
-.site-footer__nav a,
-.site-footer__contact a {
+.site-footer__nav a {
   color: var(--text-muted);
   font-size: 0.96rem;
 

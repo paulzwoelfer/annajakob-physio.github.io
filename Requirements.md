@@ -51,3 +51,4 @@
 - Veraltete, auskommentierte Inhaltsblöcke in `index.md`, die auf entfernte Legacy-Komponenten verwiesen haben, wurden ebenfalls bereinigt. Der auskommentierte `opening.html`-Block bleibt wie gewünscht erhalten.
 - Die Procedure-Sektion wurde inhaltlich neu strukturiert: zuerst die Einleitung, dann ein eigener Block für die Pflichtangaben auf der Verordnung, danach der nächste Schritt zur Terminvorbereitung und abschließend die persönliche Abschlussaussage.
 - Die Service-SVGs für `Schroth-Therapie`, `Manuelle Therapie | Triggerpunkte und Fasciatechnik` und `Schröpfen` wurden erneut näher an die bereitgestellten Referenzformen angepasst.
+- Das verbleibende SCSS wurde weiter bereinigt: ungenutzte Selektoren entfernt, doppelte Deklarationen zusammengeführt, eine fehlerhafte `404`-SCSS-Struktur korrigiert und kleine Lesbarkeitsverbesserungen in den aktiven Theme-Dateien vorgenommen.
