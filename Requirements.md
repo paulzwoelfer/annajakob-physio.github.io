@@ -52,3 +52,13 @@
 - Die Procedure-Sektion wurde inhaltlich neu strukturiert: zuerst die Einleitung, dann ein eigener Block für die Pflichtangaben auf der Verordnung, danach der nächste Schritt zur Terminvorbereitung und abschließend die persönliche Abschlussaussage.
 - Die Service-SVGs für `Schroth-Therapie`, `Manuelle Therapie | Triggerpunkte und Fasciatechnik` und `Schröpfen` wurden erneut näher an die bereitgestellten Referenzformen angepasst.
 - Das verbleibende SCSS wurde weiter bereinigt: ungenutzte Selektoren entfernt, doppelte Deklarationen zusammengeführt, eine fehlerhafte `404`-SCSS-Struktur korrigiert und kleine Lesbarkeitsverbesserungen in den aktiven Theme-Dateien vorgenommen.
+- Die Service-Icons wurden von einer positionsabhängigen `forloop.index`-Logik auf explizite `icon_key`-Einträge in `index.md` umgestellt. Die SVGs liegen jetzt als eigene Dateien unter `_includes/icons/services/` und werden über eine zentrale Include-Datei geladen.
+- Die Service-SCSS wurde entsprechend vereinfacht: statt `nth-child`-Sonderfällen werden icon-spezifische Größen jetzt über sprechende Modifier-Klassen gesteuert.
+- Die mobile Navigation wurde für Tastaturbedienung verbessert: `Escape` schließt das Menü, der Fokus springt beim Öffnen ins Menü, beim Schließen zurück zum Auslöser, und `Tab` bleibt innerhalb des offenen Menüs geführt.
+- Die Header-Höhe wird jetzt per JavaScript in die CSS-Variable `--nav-height` synchronisiert, damit Anchor-Scrolling unter dem Sticky-Header robuster funktioniert.
+- Der Procedure-Bereich wurde kontraststärker überarbeitet: helleres Eyebrow-Badge, weiße Fließtexte, stärkere Schritt-Badges und sichtbarere Hintergrundkreise, damit die Sektion näher an der Referenz bleibt und zugleich lesbarer ist.
+- Für SEO wurden die globalen Head-Metadaten neu aufgebaut: Canonical-URL, Robots-Meta, Twitter Cards, `og:image:alt`, sprachspezifische Open-Graph-Angaben und bereinigte Description-Logik.
+- Es wurde strukturierte Daten per JSON-LD ergänzt: `WebSite`, `WebPage`, `Person` und auf der Startseite zusätzlich `MedicalBusiness` mit Leistungen und Standorten.
+- Die statische, veraltete `sitemap.xml` wurde durch eine dynamische Jekyll-Sitemap ersetzt, damit URLs und Aktualisierungsdaten nicht mehr manuell gepflegt werden müssen.
+- Für AI Search / LLM-Crawler wurde eine `llms.txt` mit kompakter Beschreibung von Angebot, Kontakt, Standorten und relevanten Seiten ergänzt.
+- `robots.txt` wurde an die neue Sitemap-Struktur angepasst und um einen `Host`-Eintrag für die primäre Domain ergänzt.

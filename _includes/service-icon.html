@@ -1,0 +1,20 @@
+{% case include.icon_key %}
+  {% when "bewegungstherapie" %}
+    {% include icons/services/bewegungstherapie.svg %}
+  {% when "schroth" %}
+    {% include icons/services/schroth.svg %}
+  {% when "dorn" %}
+    {% include icons/services/dorn.svg %}
+  {% when "lymphdrainage" %}
+    {% include icons/services/lymphdrainage.svg %}
+  {% when "kinesio" %}
+    {% include icons/services/kinesio.svg %}
+  {% when "schroepfen" %}
+    {% include icons/services/schroepfen.svg %}
+  {% when "manuelle-therapie" %}
+    {% include icons/services/manuelle-therapie.svg %}
+  {% when "gangschulung" %}
+    {% include icons/services/gangschulung.svg %}
+  {% else %}
+    {% include icons/services/rehabilitation.svg %}
+{% endcase %}

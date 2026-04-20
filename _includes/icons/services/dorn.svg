@@ -1,0 +1,10 @@
+<svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+  <rect x="22" y="6" width="20" height="7" rx="3.5" stroke="currentColor" stroke-width="2.2"/>
+  <rect x="22" y="16" width="20" height="7" rx="3.5" stroke="currentColor" stroke-width="2.2"/>
+  <rect x="22" y="26" width="20" height="7" rx="3.5" stroke="currentColor" stroke-width="2.2"/>
+  <rect x="26" y="36" width="20" height="7" rx="3.5" stroke="currentColor" stroke-width="2.2" opacity="0.5"/>
+  <rect x="22" y="46" width="20" height="7" rx="3.5" stroke="currentColor" stroke-width="2.2"/>
+  <path d="M46 39 C50 37 54 39 54 43 C54 47 50 48 46 47 L44 46" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M42 39.5 L35 39.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <path d="M36 37 L33 39.5 L36 42" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

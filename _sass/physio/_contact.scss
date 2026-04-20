@@ -1,5 +1,6 @@
 .section--contact {
-  background: linear-gradient(180deg, rgba(244, 251, 252, 0.8) 0%, #ffffff 100%);
+  background: var(--bg-alt);
+  //background: linear-gradient(180deg, rgba(244, 251, 252, 0.8) 0%, #ffffff 100%);
 }
 
 .contact-grid {

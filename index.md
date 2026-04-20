@@ -6,35 +6,39 @@ header:
   image: assets/images/Anna.jpg
   image_webp: assets/images/Anna.webp
   image_alt: Bild über Anna Jakob
-  #action: # action button is optional
-    #label: 
-    #url: 
-
 
 sections:
 
   - type: services.html
     section_id: behandlungen
-    #background_style: bg-info
     title: Behandlungen
     services:
       - title: Bewegungstherapie / Physiotherapie
+        icon_key: bewegungstherapie
         text: Eine Behandlungsmethode, die Bewegung und Übungen verwendet, um Schmerzen zu lindern, die Beweglichkeit zu verbessern und die körperliche Funktion wiederherzustellen. 
       - title: Schroth-Therapie
+        icon_key: schroth
         text: Das Therapieverfahren nach Katharina Schroth ist eine physiotherapeutische Methode, die darauf abzielt, die ungleichmäßige Entwicklung der Wirbelsäule bei Kindern und Erwachsenen zu reduzieren und die damit verbundenen Gesundheitsprobleme zu behandeln.
       - title: Dorn-Therapie
+        icon_key: dorn
         text: Diese Methode ist schonend und wird verwendet, um Beschwerden des Bewegungsapparates zu behandeln. Während der Therapiesitzung führt der Therapeut behutsame und einfühlsame Bewegungen durch, um Wirbel und Gelenke in ihre korrekte Position zu bringen.
       - title: Lymphdrainage
+        icon_key: lymphdrainage
         text: Die Lymphdrainage ist eine schonende Technik, die dazu dient, das Lymphsystem zu stimulieren und überschüssige Flüssigkeit aus dem Gewebe zurück in die Blutgefäße zu leiten. Diese Methode wird angewendet, um Schwellungen zu behandeln die z.B. nach Operationen, Tumorbehandlungen, Traumata usw. auftreten. Sie wirkt sich positiv auf das vegetative Nervensystem aus und kann daher schmerzlindernde Effekte erzielen.
       - title: Kinesio-Taping
+        icon_key: kinesio
         text: Kinesiotape wird bei verschiedenen Beschwerden und Verletzungen verwendet. Der körpereigene Heilungsprozess wird stimuliert, indem es Unterstützung und Stabilität bietet, ohne dabei die Beweglichkeit zu beeinflussen. Aus diesem Grund wird das medizinische Tapen oftmals als ergänzende Behandlungsmethode verwendet.
       - title: Schröpfen
+        icon_key: schroepfen
         text: Beim Schröpfen platziert man Schröpfgefäße auf der Haut, die ein Vakuum erzeugen, um Flüssigkeiten zu mobilisieren und Gewebe zu dehnen. Dies fördert aktiv Stoffwechsel- und Heilungsprozesse im Körper und dient gleichzeitig der Behandlung von örtlichen Verspannungen und Schmerzen.
       - title: Manuelle Therapie | Triggerpunkte und Fasciatechnik
+        icon_key: manuelle-therapie
         text: Manuelle Therapie ist eine therapeutische Methode, die sich mit Funktionsstörungen des Bewegungsapparates befasst. Sie basiert auf speziellen manuellen Handgriffen und Mobilisationstechniken, die dazu dienen, Schmerzen zu reduzieren und Bewegungseinschränkungen zu beheben.
       - title: Gangschulung und Sturzprophylaxe
+        icon_key: gangschulung
         text: Gangschulung ist ein krankengymnastisches Verfahren zur Erlangung bzw. Wiedererlangung eines möglichst normalen und gesunden Gangbildes (z.B. nach Lähmungen, Schlaganfall). Die Sturzprophylaxe hingegen setzt es sich zum Ziel, das Sturzrisiko zu vermindern.
       - title: Physiotherapie nach Unfall, Verletzungen und Operationen
+        icon_key: rehabilitation
         text: Nach Unfällen wie Knochenbrüchen, Muskelverletzungen, Sehnen- und Bandverletzungen usw. spielt die Physiotherapie eine entscheidende Rolle, um den optimalen Heilungsverlauf zu fördern. Hauptziele sind dabei die Steigerung der Beweglichkeit und die Kräftigung, um eine schnelle Rückkehr in den Alltag zu ermöglichen.
   - type: procedure.html
     section_id: procedure
@@ -85,10 +89,6 @@ sections:
     - title: Anrufen
       icon: call-outline
       url: tel:+43 676 7988622
-    #- title: Instagram
-    #  icon: logo-instagram
-    #  class: jo
-    #  url: https://instagram.com/physio_anna_jakob
 
   - type: adresse.html
     section_id: adresse

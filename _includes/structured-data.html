@@ -1,0 +1,95 @@
+{% assign home_page = site.pages | where: "url", "/" | first %}
+{% assign address_section = nil %}
+{% assign services_section = nil %}
+{% assign site_description = site.description | strip_html | strip_newlines %}
+{% if home_page %}
+  {% for section in home_page.sections %}
+    {% if section.type == "adresse.html" %}
+      {% assign address_section = section %}
+    {% endif %}
+    {% if section.type == "services.html" and services_section == nil %}
+      {% assign services_section = section %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": {{ site.url | append: "/#website" | jsonify }},
+      "url": {{ site.url | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "description": {{ site_description | jsonify }},
+      "inLanguage": {{ site.locale | default: "de-AT" | jsonify }}
+    },
+    {
+      "@type": "WebPage",
+      "@id": {{ include.canonical_url | append: "#webpage" | jsonify }},
+      "url": {{ include.canonical_url | jsonify }},
+      "name": {{ include.meta_title | jsonify }},
+      "description": {{ include.meta_description | jsonify }},
+      "isPartOf": {
+        "@id": {{ site.url | append: "/#website" | jsonify }}
+      },
+      "inLanguage": {{ site.locale | default: "de-AT" | jsonify }}
+    },
+    {
+      "@type": "Person",
+      "@id": {{ site.url | append: "/#person" | jsonify }},
+      "name": {{ site.name | jsonify }},
+      "jobTitle": {{ site.subtitle | jsonify }},
+      "telephone": {{ site.phone | jsonify }},
+      "email": {{ site.email | prepend: "mailto:" | jsonify }},
+      "url": {{ site.url | jsonify }},
+      "image": {{ include.meta_image | jsonify }},
+      "sameAs": [
+        {{ site.instagram_url | jsonify }}
+      ]
+    }{% if page.url == "/" and address_section and services_section %},
+    {
+      "@type": "MedicalBusiness",
+      "@id": {{ site.url | append: "/#business" | jsonify }},
+      "name": {{ site.name | append: " - Physiotherapie Graz" | jsonify }},
+      "description": {{ site_description | jsonify }},
+      "url": {{ site.url | jsonify }},
+      "image": {{ include.meta_image | jsonify }},
+      "logo": {{ site.logo | relative_url | absolute_url | jsonify }},
+      "telephone": {{ site.phone | jsonify }},
+      "email": {{ site.email | prepend: "mailto:" | jsonify }},
+      "areaServed": {
+        "@type": "City",
+        "name": "Graz"
+      },
+      "sameAs": [
+        {{ site.instagram_url | jsonify }}
+      ],
+      "availableService": [
+        {% for service in services_section.services %}
+          {
+            "@type": "MedicalTherapy",
+            "name": {{ service.title | jsonify }},
+            "description": {{ service.text | strip_html | strip_newlines | jsonify }}
+          }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ],
+      "location": [
+        {% for standort in address_section.adressen %}
+          {
+            "@type": "Place",
+            "name": {{ standort.title | jsonify }},
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": {{ standort.adresse | split: "," | first | strip | jsonify }},
+              "postalCode": {{ standort.adresse | split: "," | last | strip | split: " " | first | jsonify }},
+              "addressLocality": "Graz",
+              "addressCountry": "AT"
+            }
+          }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      }
+    }{% endif %}
+  ]
+}
+</script>
