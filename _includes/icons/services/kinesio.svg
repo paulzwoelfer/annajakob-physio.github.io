@@ -1,0 +1,6 @@
+<svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+  <path d="M18 20 C18 12, 25 8, 34 8 C44 8, 52 14, 52 24 C52 36, 41 44, 31 44 C21 44, 12 37, 12 27 C12 23, 14 21, 18 20Z" stroke="currentColor" stroke-width="2.2"/>
+  <path d="M18 21 C19 15, 25 12, 33 12 C41 12, 47 17, 47 24 C47 33, 39 39, 31 39 C23 39, 17 34, 17 27" stroke="currentColor" stroke-width="1.8" opacity="0.35"/>
+  <rect x="14" y="18" width="36" height="7" rx="3.5" transform="rotate(-18 14 18)" fill="currentColor" opacity="0.78"/>
+  <rect x="16" y="32" width="34" height="7" rx="3.5" transform="rotate(18 16 32)" fill="currentColor" opacity="0.46"/>
+</svg>

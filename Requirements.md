@@ -1,0 +1,64 @@
+# Requirements
+
+## Ziel
+- Die bestehende Jekyll-Website soll visuell und strukturell modernisiert werden.
+- Als Referenz für Stil und Seitenaufbau dient `/Users/paulzwolfer/Downloads/index.html`.
+- Logos, Bilder und bestehende Inhalte aus dem aktuellen Projekt sollen weiterverwendet werden.
+- Die Umsetzung soll nicht als statisches Einzel-HTML übernommen werden, sondern in Jekyll-Komponenten und SCSS-Partials aufgeteilt werden.
+- Vorhandene Komponenten dürfen und sollen dafür angepasst werden.
+- Tests sollen nicht ergänzt oder beschrieben werden.
+
+## Umgesetzte KI-Änderungen
+- Die Basislayouts wurden neu aufgebaut: `base`, `home`, `page` und `404` nutzen jetzt eine moderne semantische Struktur statt der bisherigen Bootstrap-orientierten Struktur.
+- Die Startseite übernimmt jetzt die Struktur der Referenzvorlage mit Sticky-Navigation, großem Hero, Kartenraster für Behandlungen, modernisiertem Ablauf-Block, Terminbereich, Adressbereich und modernisiertem Footer.
+- Die Navigation wurde als eigene Jekyll-Komponente neu strukturiert und auf ein responsives Mobile-Menü mit Toggle umgestellt.
+- Die Sektion `services.html` wurde in ein kartenbasiertes Layout mit integrierten SVG-Illustrationen pro Leistungsblock überführt.
+- Die Sektion `procedure.html` wurde in ein zweispaltiges Ablaufmodul mit hervorgehobenen Schritten und Intro-Text im Stil der Referenz umgebaut.
+- Die Sektion `contact.html` wurde auf eine moderne Terminbuchungsstruktur umgestellt: prominenter Online-Buchungsblock plus separate Kontaktkarten für Telefon, E-Mail und Instagram.
+- Die Sektion `adresse.html` wurde auf ein zweispaltiges Layout mit Standorttext, Google-Maps-Einbettung, Routenbutton und Praxisbild umgebaut.
+- Die Sektion `opening.html` wurde als eigenständige moderne Info-Karte neu gestaltet, damit die bestehende Öffnungszeiten-/Erreichbarkeitsinformation weiterhin sauber eingebunden bleibt.
+- Der Footer wurde vollständig ersetzt und an die neue Designsprache angepasst, inklusive Kontaktlinks und Legal-Navigation.
+- Das Verhalten in `assets/js/main.js` wurde neu implementiert: Sticky-Navigation mit Scroll-Zustand, Mobile-Menü-Logik, automatische Footer-Jahreszahl und Reveal-Animationen für `fade-up`-Elemente.
+- Das Styling wurde vollständig in SCSS-Partials organisiert und modernisiert. Betroffen sind insbesondere:
+  - `_sass/physio/_general.scss`
+  - `_sass/physio/_nav.scss`
+  - `_sass/physio/_header.scss`
+  - `_sass/physio/_services.scss`
+  - `_sass/physio/_procedure.scss`
+  - `_sass/physio/_contact.scss`
+  - `_sass/physio/_adresse.scss`
+  - `_sass/physio/_opening.scss`
+  - `_sass/physio/_text-page.scss`
+  - `_sass/physio/_footer.scss`
+  - `_sass/physio/_404.scss`
+- Die SCSS-Importstruktur in `_sass/physio/_all.scss` wurde erweitert, damit die neue Partialisierung vollständig eingebunden ist.
+- Die Menüstruktur in `_data/menus.yml` wurde angepasst, damit die Startnavigation zur neuen Hero-Sektion passt.
+- Die Umsetzung wurde in dieser Phase ohne zusätzliche Test- oder Build-Ausführung weitergeführt, wie gewünscht.
+- Der Hero wurde näher an die Referenz gebracht: Icon im Eyebrow-Badge, korrekt gestalteter Zertifizierungs-Tag auf dem Bild, zusätzliche Trennlinie im Headerbereich, stärker gerundetes Hero-Bild und zentrierte Mobile-Darstellung.
+- Die mobile Navigation zeigt den Brand-Text jetzt auch auf kleinen Screens weiterhin an, statt ihn auszublenden.
+- Der Ablauf-Bereich wurde visuell überarbeitet, damit Farben, Typografie, Kartenstil und Hintergrund näher am gelieferten Design liegen.
+- Die Termin-Karten wurden näher an das Referenzdesign angepasst, inklusive prominenterem Online-Buchungsblock und konsistenterer Kartenoptik.
+- Der Adressblock verwendet jetzt eine strukturierte `address`-Darstellung mit Icon, Textblock und besserem Mobile-Verhalten.
+- Der Footer wurde barriereärmer umgesetzt: klickbare Brand-Zone, explizitere Link-Labels, normale Logo-Darstellung und sauberere semantische Struktur.
+- Für Inhaltsseiten wurde der Seiten-Header ergänzt und die `/termin`-Seite gezielt entschärft, damit der Header über dem eingebetteten Buchungssystem ruhiger und passender wirkt.
+- Globale Fokuszustände und mehrere ARIA-Verbesserungen wurden ergänzt, um Tastaturbedienung und allgemeine Zugänglichkeit zu verbessern.
+- Kleinere Aufräumarbeiten wurden durchgeführt, unter anderem das Entfernen nicht mehr genutzter Header-/Nav-Reste aus der letzten Umstellung.
+- Der Footer-Hintergrund wurde auf eine hellere, logo-kompatible Fläche umgestellt, damit das bestehende Logo ohne weiße Invertierung oder Kontrastprobleme sauber funktioniert.
+- Die große Online-Termin-Karte wurde visuell an die kleineren Termin-Karten angenähert; nur Größe und CTA unterscheiden sich jetzt stärker.
+- Die Termin-Links innerhalb der Karten wurden als eigene, klar abgegrenzte Interaktionselemente gestaltet, statt die gesamte Karte als primären Link wirken zu lassen.
+- Der Ablauf-Bereich wurde erneut an die Referenz angenähert: hellerer Türkisverlauf, sichtbare radiale Hintergrundkreise und überarbeitete Nummern-Badges für die Schritte.
+- Die Legacy-Dateien `assets/css/styles.css`, `_includes/actions.html`, `_includes/call-to-action.html`, `_includes/appointment.html`, `_includes/tiles.html`, `_sass/physio/_variables.scss` und `_sass/physio/_mixins.scss` wurden entfernt, weil sie vom aktuellen Theme nicht mehr verwendet werden.
+- Veraltete, auskommentierte Inhaltsblöcke in `index.md`, die auf entfernte Legacy-Komponenten verwiesen haben, wurden ebenfalls bereinigt. Der auskommentierte `opening.html`-Block bleibt wie gewünscht erhalten.
+- Die Procedure-Sektion wurde inhaltlich neu strukturiert: zuerst die Einleitung, dann ein eigener Block für die Pflichtangaben auf der Verordnung, danach der nächste Schritt zur Terminvorbereitung und abschließend die persönliche Abschlussaussage.
+- Die Service-SVGs für `Schroth-Therapie`, `Manuelle Therapie | Triggerpunkte und Fasciatechnik` und `Schröpfen` wurden erneut näher an die bereitgestellten Referenzformen angepasst.
+- Das verbleibende SCSS wurde weiter bereinigt: ungenutzte Selektoren entfernt, doppelte Deklarationen zusammengeführt, eine fehlerhafte `404`-SCSS-Struktur korrigiert und kleine Lesbarkeitsverbesserungen in den aktiven Theme-Dateien vorgenommen.
+- Die Service-Icons wurden von einer positionsabhängigen `forloop.index`-Logik auf explizite `icon_key`-Einträge in `index.md` umgestellt. Die SVGs liegen jetzt als eigene Dateien unter `_includes/icons/services/` und werden über eine zentrale Include-Datei geladen.
+- Die Service-SCSS wurde entsprechend vereinfacht: statt `nth-child`-Sonderfällen werden icon-spezifische Größen jetzt über sprechende Modifier-Klassen gesteuert.
+- Die mobile Navigation wurde für Tastaturbedienung verbessert: `Escape` schließt das Menü, der Fokus springt beim Öffnen ins Menü, beim Schließen zurück zum Auslöser, und `Tab` bleibt innerhalb des offenen Menüs geführt.
+- Die Header-Höhe wird jetzt per JavaScript in die CSS-Variable `--nav-height` synchronisiert, damit Anchor-Scrolling unter dem Sticky-Header robuster funktioniert.
+- Der Procedure-Bereich wurde kontraststärker überarbeitet: helleres Eyebrow-Badge, weiße Fließtexte, stärkere Schritt-Badges und sichtbarere Hintergrundkreise, damit die Sektion näher an der Referenz bleibt und zugleich lesbarer ist.
+- Für SEO wurden die globalen Head-Metadaten neu aufgebaut: Canonical-URL, Robots-Meta, Twitter Cards, `og:image:alt`, sprachspezifische Open-Graph-Angaben und bereinigte Description-Logik.
+- Es wurde strukturierte Daten per JSON-LD ergänzt: `WebSite`, `WebPage`, `Person` und auf der Startseite zusätzlich `MedicalBusiness` mit Leistungen und Standorten.
+- Die statische, veraltete `sitemap.xml` wurde durch eine dynamische Jekyll-Sitemap ersetzt, damit URLs und Aktualisierungsdaten nicht mehr manuell gepflegt werden müssen.
+- Für AI Search / LLM-Crawler wurde eine `llms.txt` mit kompakter Beschreibung von Angebot, Kontakt, Standorten und relevanten Seiten ergänzt.
+- `robots.txt` wurde an die neue Sitemap-Struktur angepasst und um einen `Host`-Eintrag für die primäre Domain ergänzt.

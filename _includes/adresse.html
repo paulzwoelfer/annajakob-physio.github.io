@@ -1,17 +1,46 @@
-<section id="{{ section.section_id }}" class="page-section {{ section.background_style }}">
-    <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-8 col-xl-6 center-text">
-          <h2 class="mt-0">{{ section.title }}</h2>
-          <hr class="divider"/>
-          <p class="mb-3">{{ section.text }}</p>
-        </div>
-      </div>
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-8 col-xl-6 center-text">
-          <img class="logo mb-2" src="{{ section.logo | relative_url }} " alt="Praxis Miteinander"><br/>
-          <p class="">{{ section.adresse }}</p>
-        </div>
-      </div>
+<section id="{{ section.section_id }}" class="section section--address" aria-labelledby="{{ section.section_id }}-heading">
+  <div class="container address">
+    <div class="address__header">
+      <span class="section-eyebrow">Standort</span>
+      <h2 class="section-title" id="{{ section.section_id }}-heading">{{ section.title }}</h2>
+      <div class="section-line" aria-hidden="true"></div>
+      <p class="address__intro">{{ section.text | strip_html }}</p>
     </div>
-  </section>
+
+    <div class="address__grid">
+      {% for standort in section.adressen %}
+        <article class="address__card">
+          <div class="address__media">
+            <div class="address__image-wrap">
+              <img src="{{ standort.logo | relative_url }}" alt="{{ site.praxis_name }} - {{ standort.adresse }}" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="address__info">
+            <address class="address__block">
+              <svg viewBox="0 0 24 24" stroke-width="2" fill="none" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <p>
+                <strong>{{ standort.title }}</strong>
+                <span>{{ standort.adresse }}</span>
+              </p>
+            </address>
+
+            <a href="https://maps.google.com/?q={{ standort.adresse | uri_escape }}" target="_blank" rel="noopener noreferrer" class="address__route" aria-label="Route nach {{ standort.adresse }} in Google Maps planen">
+              <svg viewBox="0 0 24 24" stroke-width="2" fill="none" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+              Route planen
+            </a>
+          </div>
+
+          <div class="address__map">
+            <iframe
+              src="https://www.google.com/maps?q={{ standort.adresse | uri_escape }}&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Karte: {{ site.praxis_name }}, {{ standort.adresse }}"
+            ></iframe>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

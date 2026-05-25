@@ -1,28 +1,62 @@
-<section id="{{ section.section_id }}" class="page-section {{ section.background_style }}">
-    <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-8 col-xl-6 center-text">
-          <h2 class="mt-0">{{ section.title }}</h2>
-          <hr class="divider"/>
-          <p class="mb-5">{{ section.text }}</p>
+{% assign online_action = section.actions | where: "self", true | first %}
+{% assign other_actions = section.actions | where_exp: "action", "action.self != true" %}
+
+<section id="{{ section.section_id }}" class="section section--contact" aria-labelledby="{{ section.section_id }}-heading">
+  <div class="container">
+    <header class="section-header">
+      <span class="section-eyebrow">Terminbuchung</span>
+      <h2 class="section-title" id="{{ section.section_id }}-heading">Termin vereinbaren</h2>
+      <div class="section-line" aria-hidden="true"></div>
+      <p class="section-desc">{{ section.text }}</p>
+    </header>
+
+    <div class="contact-grid">
+      {% if online_action %}
+        <div class="booking-panel fade-up">
+          <div class="contact-card__header">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-width="2" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            </div>
+            <h3>Online Termin buchen</h3>
+          </div>
+          <p>Buchen Sie Ihren Termin bequem und schnell über das Online-Buchungssystem, rund um die Uhr verfügbar.</p>
+          <a href="{{ online_action.url }}" class="contact-card__link contact-card__link--button">Jetzt Termin buchen</a>
         </div>
-      </div>
-      <div class="row gx-4 gx-lg-5 justify-content-center mb-5 icon-container">
-        {% for action in section.actions %}
-        <div class="col ml-auto text-center">
-          {% if action.self %}
-            <a class="icon-link {{ action.class }}" href="{{ action.url }}">
-              <ion-icon class="icon" name="{{ action.icon }}"></ion-icon>
-              {{ action.title }}
-            </a>
-          {% else %}
-            <a class="icon-link" target="_blank" href="{{ action.url }}">
-              <ion-icon class="icon" name="{{ action.icon }}"></ion-icon>
-              {{ action.title }}
-            </a>
-          {% endif %}
-        </div>
+      {% endif %}
+
+      <div class="contact-cards">
+        {% for action in other_actions %}
+          <article class="contact-card fade-up">
+            <div class="contact-card__header">
+              <div class="contact-card__icon" aria-hidden="true">
+                {% case action.icon %}
+                  {% when "mail-outline" %}
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M3 8L10.94 13.29C11.57 13.71 12.43 13.71 13.06 13.29L21 8M5 19H19C20.1 19 21 18.1 21 17V7C21 5.9 20.1 5 19 5H5C3.9 5 3 5.9 3 7V17C3 18.1 3.9 19 5 19Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  {% when "call-outline" %}
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M3 5C3 3.9 3.9 3 5 3H8.28C8.71 3 9.09 3.28 9.23 3.68L10.73 8.17C10.87 8.59 10.68 9.04 10.28 9.24L8.03 10.37C9.37 13 11.5 15.13 14.13 16.47L15.26 14.22C15.46 13.82 15.91 13.63 16.33 13.77L20.82 15.27C21.22 15.41 21.5 15.79 21.5 16.22V19.5C21.5 20.6 20.6 21.5 19.5 21.5H18.5C9.94 21.5 3 14.56 3 6V5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  {% else %}
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M7 2H17V6H21V22H3V6H7V2ZM9 4V6H15V4H9ZM8 9C6.34 9 5 10.34 5 12C5 13.66 6.34 15 8 15C9.66 15 11 13.66 11 12C11 10.34 9.66 9 8 9ZM16 10V12H19V10H16ZM13 16V18H19V16H13Z" fill="currentColor"/></svg>
+                {% endcase %}
+              </div>
+              <h3>
+                {% case action.icon %}
+                  {% when "mail-outline" %}Per E-Mail
+                  {% when "call-outline" %}Telefonisch
+                  {% else %}Instagram
+                {% endcase %}
+              </h3>
+            </div>
+            <p>
+              {% case action.icon %}
+                {% when "mail-outline" %}Schreiben Sie mir eine E-Mail mit Ihrem Anliegen und Ihren Wunschterminen. Ich melde mich schnellstmöglich zurück.
+                {% when "call-outline" %}Rufen Sie mich gerne an, um einen Termin zu vereinbaren. Ich freue mich auf Ihren Anruf.
+                {% else %}Wenn Sie lieber über Social Media Kontakt aufnehmen, können Sie mir auch auf Instagram schreiben.
+              {% endcase %}
+            </p>
+            <a href="{{ action.url }}" class="contact-card__link" {% unless action.self %}target="_blank" rel="noopener noreferrer"{% endunless %}>{{ action.title }}</a>
+          </article>
         {% endfor %}
       </div>
     </div>
-  </section>
+  </div>
+</section>

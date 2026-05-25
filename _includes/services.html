@@ -1,18 +1,25 @@
-<section class="page-section {{ section.background_style }}" id="{{ section.section_id }}">
-    <div class="container px-4 px-lg-5">
-      <h2 class="text-center mt-0">{{ section.title }}</h2>
-      <hr class="divider ">
-      <div class="card-container">
-        {% for service in section.services %}
-        <div class="card">
+<section id="{{ section.section_id }}" class="section section--services" aria-labelledby="{{ section.section_id }}-heading">
+  <div class="container">
+    <header class="section-header">
+      <span class="section-eyebrow">Leistungen</span>
+      <h2 class="section-title" id="{{ section.section_id }}-heading">{{ section.title }}</h2>
+      <div class="section-line" aria-hidden="true"></div>
+      <p class="section-desc">Ein breites Spektrum an physiotherapeutischen Methoden, individuell abgestimmt auf Ihre Bedürfnisse.</p>
+    </header>
+
+    <ul class="cards-grid" role="list">
+      {% for service in section.services %}
+        <li class="service-card fade-up">
+          <div class="service-card__icon service-card__icon--{{ service.icon_key | default: 'rehabilitation' }}" aria-hidden="true">
+            {% include service-icon.html icon_key=service.icon_key %}
+          </div>
           <h3>{{ service.title }}</h3>
-          {{ service.text | markdownify  | class="description"}}
+          <p>{{ service.text }}</p>
           {% if service.url %}
-            <a href="{{ service.url }}" class="read-more">Mehr erfahren</a>
+            <a href="{{ service.url }}" class="service-card__link">Mehr erfahren</a>
           {% endif %}
-          
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

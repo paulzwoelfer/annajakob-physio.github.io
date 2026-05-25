@@ -3,8 +3,8 @@
 # However on github-pages custom plugins are disabled, and the script doesn't
 # run. So please, fill in any custom menu entry here.
 header:
-- title: Über mich
-  url: /#page-top
+#- title: Über mich
+#  url: /#hero
 - title: Behandlungen
   url: /#behandlungen
 #- title: Preis
@@ -15,5 +15,5 @@ header:
   url: /#termin
 - title: Adresse
   url: /#adresse
-- title: Öffnungszeiten
-  url: /#oeffnungszeiten
+#- title: Öffnungszeiten
+#  url: /#oeffnungszeiten

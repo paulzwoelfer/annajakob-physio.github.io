@@ -7,6 +7,7 @@ description: In meiner Tätigkeit als zertifizierte Schroth-Therapeutin in Graz 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: https://physio-annajakob.com # the base hostname & protocol for your site
 url_alternate: https://www.physio-annajakob.com
+locale: de-AT
 author:
 og_site_name: Website der Wahl-Physiotherapeutin Anna Jakob
 og_image: assets/images/og_image.png

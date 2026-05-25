@@ -5,3 +5,7 @@ _site/
 Gemfile.lock
 *.gem
 .idea
+.DS_Store
+*.log
+node_modules/
+dist/

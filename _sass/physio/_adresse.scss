@@ -1,11 +1,148 @@
-#adresse {
+.section--address {
+  background: linear-gradient(180deg, #ffffff 0%, #f4fbfc 100%);
+}
 
-    .logo {
-        max-width: 100%;
+.address {
+  display: grid;
+  gap: 2rem;
+}
 
-        @include tablet {
-            width: 50%;
-            margin: auto;
-        }
-    }
+.address__header {
+  max-width: 42rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.address__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.address__card {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+
+.address__info {
+  display: grid;
+  gap: 0.9rem;
+  align-items: start;
+}
+
+.address__block {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  margin: 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--text-muted);
+  box-shadow: var(--shadow-sm);
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex: 0 0 auto;
+    margin-top: 0.2rem;
+    stroke: var(--brand-dark);
+  }
+
+  p {
+    display: grid;
+    gap: 0.2rem;
+    margin: 0;
+  }
+
+  strong {
+    color: var(--text);
+  }
+}
+
+.address__route {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: fit-content;
+  min-height: 3rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(15, 127, 147, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--brand-dark);
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform var(--transition),
+    background var(--transition),
+    border-color var(--transition);
+
+  svg {
+    width: 1rem;
+    height: 1rem;
+    flex: 0 0 auto;
+  }
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-1px);
+    background: var(--brand-light);
+    border-color: rgba(15, 127, 147, 0.34);
+  }
+}
+
+.address__map,
+.address__image-wrap {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+}
+
+  .address__map {
+  iframe {
+    display: block;
+    width: 100%;
+    min-height: 18rem;
+    border: 0;
+  }
+}
+
+.address__image-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+
+  img {
+    max-height: 80px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 900px) {
+  .address__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .address__header {
+    text-align: center;
+  }
+
+  .address__info {
+    justify-items: center;
+  }
+
+  .address__block {
+    text-align: left;
+  }
+
+  .address__card {
+    max-width: 34rem;
+    margin: 0 auto;
+  }
 }

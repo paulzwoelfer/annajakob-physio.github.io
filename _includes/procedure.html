@@ -1,20 +1,29 @@
-<section id="{{ section.section_id }}" class="page-section {{ section.background_style }} procedure">
-    <div class="container px-4 px-lg-5 centered-section">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="{{ section.text_style | default: 'text-center' }}">
-          <h2 class="mt-0 text-center">{{ section.title }}</h2>
-          <hr class="divider">
-        </div>
-      </div>
-      <div class="description">
-        <p>{{ section.text | markdownify }}</p>
-        <ul>
-          {% for procedure in section.list %}
-          <li>{{ procedure | markdownify }}</li>
-        {% endfor %}
-        </ul>
-        <p>{{ section.text2 | markdownify }}</p>
-      </div>
-      {% include actions.html actions=section.actions %}
+<section id="{{ section.section_id }}" class="section section--procedure" aria-labelledby="{{ section.section_id }}-heading">
+  <div class="container procedure">
+    <div class="procedure__intro">
+      <span class="section-eyebrow">Wie es funktioniert</span>
+      <h2 class="section-title" id="{{ section.section_id }}-heading">{{ section.title }}</h2>
+      <div class="section-line section-line--left" aria-hidden="true"></div>
+      <p class="procedure__text">{{ section.text }}</p>
     </div>
-  </section>
+
+    <div class="procedure__requirements fade-up">
+      <h3>Die Verordnung sollte enthalten</h3>
+      <ol class="procedure__steps" aria-label="Erforderliche Angaben auf der Verordnung">
+        {% for item in section.list %}
+          <li>
+            <div class="procedure__step-num" aria-hidden="true">{{ forloop.index }}</div>
+            <p class="procedure__step-copy">{{ item }}</p>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <div class="procedure__outro fade-up">
+      <p class="procedure__text">{{ section.text2 }}</p>
+      <div class="procedure__quote">
+        <p>{{ section.text3 }}</p>
+      </div>
+    </div>
+  </div>
+</section>

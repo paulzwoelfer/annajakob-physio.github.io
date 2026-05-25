@@ -1,78 +1,19 @@
 <!DOCTYPE html>
-<html lang="de">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-        <meta name="description" content="{{ site.description }}"> 
-        <meta property="og:title" content="{{ site.title }}">
-        <meta property="og:site_name" content="{{ site.og_site_name }}">
-        <meta property="og:url" content="{{ site.url }}">
-        <meta property="og:description" content="{{ site.description }}">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="{{ site.url }}{{ site.og_image | relative_url }}">
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-         <!-- Core theme CSS (includes Bootstrap)-->
-         <link rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}"  />
-
-         <!-- Own styles -->
-        <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}" />
-
-        <!-- Font -->
-        <link rel="stylesheet" href="{{ 'assets/fonts/NotoSansNKoUnjoined-VariableFont_wght.ttf' | relative_url }}"/>
-
-        <!-- <link rel="stylesheet" href="{{ 'assets/fonts/NotoSerifNPHmong-VariableFont_wght.ttf' | relative_url }}"/>
-
-        <link rel="stylesheet" href="{{ 'assets/fonts/Lora-VariableFont_wght.ttf' | relative_url }}"/>
-        <link rel="stylesheet" href="{{ 'assets/fonts/Lora-Italic-VariableFont_wght.ttf' | relative_url }}"/>-->
-
-        
-    
-        <!-- Favicon-->
-        <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}"/>
-        <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>-->
-        <link rel="manifest" href="/assets/images/site.webmanifest"/>
-        <meta name="theme-color" content="#ffffff"/>
-
-
-        <!-- <link rel="canonical" href="{{ site.url }}">
-        <link rel="alternate" href="{{ site.url_alternate }}" hreflang="de">
-        <link rel="alternate" href="{{ site.url }}" hreflang="x-default"> -->
-
-       
-    </head>
-
-
-
-    <body id="page-top" class="{% if page.layout == site.landing_template %}landing {% endif %}">
-        {% include nav.html    section=section site=site page=page %}
-        {{ content }}
-        {% include footer.html section=section site=site page=page %}
-
-        <!-- Scripts -->
-        <script src="{{ 'assets/js/main.js' | relative_url }}"></script>
-
-        <!-- Ionicons -->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-        <!-- <script src="{{ 'assets/js/scripts.min.js' | relative_url }}"></script> -->
-
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- SimpleLightbox plugin JS
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>-->
-        <!-- Core theme JS-->
-        
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
-    </body>
-
+<html lang="{{ site.locale | default: 'de-AT' }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% include seo.html %}
+    <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}" />
+    <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" />
+    <link rel="manifest" href="{{ '/assets/images/site.webmanifest' | relative_url }}" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body id="page-top" class="site-shell {% if page.layout == site.landing_template %}landing{% endif %} page-slug-{{ page.permalink | default: page.title | default: 'default' | slugify }}">
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+    {% include nav.html site=site page=page %}
+    {{ content }}
+    {% include footer.html site=site page=page %}
+    <script src="{{ 'assets/js/main.js' | relative_url }}"></script>
+  </body>
 </html>
